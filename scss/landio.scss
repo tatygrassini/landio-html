@@ -459,6 +459,10 @@ h2 {
     .icon-facebook {
       margin-right: .1rem;
     }
+    &:focus,
+    &:hover {
+      span { color: #fff; }
+    }
   }
   li {
     padding: .1875rem .7rem;

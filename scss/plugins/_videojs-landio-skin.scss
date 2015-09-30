@@ -1,19 +1,40 @@
-// Video.js v4.12.15
+//  --------------------------------------------------
+//  Video.js v4.12.15
+//  LANDIO player skin
+//  --------------------------------------------------
+//  Global
+//  Volume/Mute
+//  Progress
+//  Time Display
+//  Big Play Button
+//  Loading Spinner
+//  Required Styles
+//  Poster Styles
 
-// Global
-// Volume/Mute
-// Progress
-// Time Display
-// Big Play Button
-// Loading Spinner
-// Required Styles
-// Poster Styles
 
 //
 // =Global
 // --------------------------------------------------
 
-.dn { display: none !important; }
+.vjs-hidden,
+.vjs-controls-disabled .vjs-control-bar,
+.vjs-using-native-controls .vjs-control-bar,
+.vjs-error .vjs-control-bar,
+.vjs-live-controls,
+.vjs-play-control,
+.vjs-default-skin .vjs-seek-handle,
+.vjs-remaining-time,
+.vjs-time-divider,
+.vjs-using-native-controls .vjs-big-play-button,
+.vjs-error .vjs-big-play-button,
+.vjs-menu,
+.vjs-menu-button,
+.vjs-menu-content,
+.vjs-has-started .vjs-poster,
+.vjs-controls-disabled .vjs-poster,
+.vjs-using-native-controls .vjs-poster {
+  display: none !important;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -65,22 +86,10 @@
   transition: visibility 1s, opacity 1s;
 }
 
-.vjs-controls-disabled .vjs-control-bar,
-.vjs-using-native-controls .vjs-control-bar,
-.vjs-error .vjs-control-bar {
-  @extend .dn;
-}
-
 // Don't hide the control bar if it's audio
 .vjs-audio.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
   opacity: 1;
   visibility: visible;
-}
-
-@media \0screen {
-  .vjs-user-inactive.vjs-playing .vjs-control-bar :before {
-    content: "";
-  }
 }
 
 // General styles for individual controls.
@@ -111,11 +120,6 @@
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-.vjs-live-controls,
-.vjs-play-control {
-  @extend .dn;
 }
 
 
@@ -215,15 +219,10 @@
   left: 0;
   top: 0;
 }
-.vjs-default-skin .vjs-play-progress {
-  background-color: rgba(255,255,255,.8);
-}
-.vjs-default-skin .vjs-load-progress {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-.vjs-default-skin .vjs-seek-handle {
-  @extend .dn;
-}
+
+.vjs-default-skin .vjs-play-progress { background-color: rgba(255,255,255,.8); }
+
+.vjs-default-skin .vjs-load-progress { background-color: rgba(255, 255, 255, 0.5); }
 
 
 //
@@ -281,17 +280,9 @@
 }
 
 @include media-breakpoint-down(xs) {
-  .vjs-paused .vjs-big-play-button,
-  .vjs-playing .vjs-big-play-button {
+  .vjs-has-started .vjs-big-play-button {
     top: 30%;
   }
-}
-
-.vjs-remaining-time,
-.vjs-time-divider,
-.vjs-using-native-controls .vjs-big-play-button,
-.vjs-error .vjs-big-play-button {
-  @extend .dn;
 }
 
 
@@ -312,11 +303,13 @@
   margin-top: -0.5em;
   opacity: 0.75;
 }
+
 .vjs-waiting .vjs-loading-spinner,
 .vjs-seeking .vjs-loading-spinner {
   display: block;
   animation: spin 1.5s infinite linear;
 }
+
 .vjs-default-skin .vjs-loading-spinner:before {
   content: "\e619";
   font-family: 'icomoon';
@@ -328,6 +321,7 @@
   text-align: center;
   text-shadow: 0em 0em 0.1em #000;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -335,13 +329,6 @@
   100% {
     transform: rotate(359deg);
   }
-}
-
-// Menu Buttons (Captions/Subtitles/etc.)
-.vjs-menu,
-.vjs-menu-button,
-.vjs-menu-content {
-  @extend .dn;
 }
 
 
@@ -397,26 +384,15 @@
   width: 100%;
   height: auto;
 }
-// Hide the poster after the video has started playing
-.vjs-has-started .vjs-poster { display: none; }
+
 // Don't hide the poster if we're playing audio
 .vjs-audio.vjs-has-started .vjs-poster { display: block; }
-// Hide the poster when controls are disabled because it's clicka and the native poster can take over
-.vjs-controls-disabled .vjs-poster { display: none; }
-// Hide the poster when native controls are used otherwise it covers them
-.vjs-using-native-controls .vjs-poster { display: none; }
+
 // show poster at the end
 .vjs-ended .vjs-poster { display: block; }
 
-// Hide disabled or unsupported controls
-.vjs-hidden {
-  display: none !important;
-}
 .vjs-lock-showing {
   display: block !important;
   opacity: 1;
   visibility: visible;
 }
-
-
-

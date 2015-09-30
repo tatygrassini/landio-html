@@ -4828,15 +4828,23 @@ a.bg-danger:hover {
   .hidden-print .hidden-print {
     display: none !important; } }
 
-.dn, .vjs-controls-disabled .vjs-control-bar,
+.vjs-hidden,
+.vjs-controls-disabled .vjs-control-bar,
 .vjs-using-native-controls .vjs-control-bar,
-.vjs-error .vjs-control-bar, .vjs-live-controls,
-.vjs-play-control, .vjs-default-skin .vjs-seek-handle, .vjs-remaining-time,
+.vjs-error .vjs-control-bar,
+.vjs-live-controls,
+.vjs-play-control,
+.vjs-default-skin .vjs-seek-handle,
+.vjs-remaining-time,
 .vjs-time-divider,
 .vjs-using-native-controls .vjs-big-play-button,
-.vjs-error .vjs-big-play-button, .vjs-menu,
+.vjs-error .vjs-big-play-button,
+.vjs-menu,
 .vjs-menu-button,
-.vjs-menu-content {
+.vjs-menu-content,
+.vjs-has-started .vjs-poster,
+.vjs-controls-disabled .vjs-poster,
+.vjs-using-native-controls .vjs-poster {
   display: none !important; }
 
 @font-face {
@@ -4883,10 +4891,6 @@ a.bg-danger:hover {
 .vjs-audio.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
   opacity: 1;
   visibility: visible; }
-
-@media \0screen {
-  .vjs-user-inactive.vjs-playing .vjs-control-bar :before {
-    content: ""; } }
 
 .vjs-default-skin .vjs-control {
   outline: none;
@@ -5055,8 +5059,7 @@ a.bg-danger:hover {
     content: "\e614"; }
 
 @media (max-width: 33.9em) {
-  .vjs-paused .vjs-big-play-button,
-  .vjs-playing .vjs-big-play-button {
+  .vjs-has-started .vjs-big-play-button {
     top: 30%; } }
 
 .vjs-loading-spinner {
@@ -5147,23 +5150,11 @@ a.bg-danger:hover {
   width: 100%;
   height: auto; }
 
-.vjs-has-started .vjs-poster {
-  display: none; }
-
 .vjs-audio.vjs-has-started .vjs-poster {
   display: block; }
 
-.vjs-controls-disabled .vjs-poster {
-  display: none; }
-
-.vjs-using-native-controls .vjs-poster {
-  display: none; }
-
 .vjs-ended .vjs-poster {
   display: block; }
-
-.vjs-hidden {
-  display: none !important; }
 
 .vjs-lock-showing {
   display: block !important;
@@ -5512,6 +5503,9 @@ h2 {
       color: rgba(255, 255, 255, 0.5); }
     .social-share a .icon-facebook {
       margin-right: .1rem; }
+    .social-share a:focus span,
+    .social-share a:hover span {
+      color: #fff; }
   .social-share li {
     padding: 0.1875rem 0.7rem; }
   .social-share li + li {
