@@ -259,10 +259,6 @@
   transform: translate(-50%, -50%);
   z-index: 2;
 
-  @include media-breakpoint-down(xs) {
-    top: 30%;
-  }
-
   &:before {
     content: "\e611"; // PLAY icon
     font-family: 'icomoon';
@@ -281,6 +277,13 @@
   pointer-events: none;
   &:before {
     content: "\e614"; // PAUSE icon
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .vjs-paused .vjs-big-play-button,
+  .vjs-playing .vjs-big-play-button {
+    top: 30%;
   }
 }
 

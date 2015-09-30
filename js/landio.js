@@ -17,6 +17,18 @@
   // Video JS
   // @codekit-prepend "plugins/video.js";
 
+  function navMobileCollapse() {
+    // avoid having both mobile navs opened at the same time
+    $('#collapsingMobileUser').on('show.bs.collapse', function () {
+      $('#collapsingNavbar').removeClass('in');
+      $('[data-target="#collapsingNavbar"]').attr('aria-expanded', 'false');
+    });
+    $('#collapsingNavbar').on('show.bs.collapse', function () {
+      $('#collapsingMobileUser').removeClass('in');
+      $('[data-target="#collapsingMobileUser"]').attr('aria-expanded', 'false');
+    });
+  }
+
   function navSearch() {
     // hide first nav items when search is opened
     $('#searchDropdown').on('show.bs.dropdown', function () {
@@ -55,6 +67,7 @@
   }
 
   function init() {
+    navMobileCollapse();
     navSearch();
     htmlVideo();
   }
