@@ -66,10 +66,20 @@
     });
   }
 
+  function scrollToTop() {
+    $('.scroll-top').on( 'click', function(){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
+      return false;
+    });
+  }
+
   function init() {
     navMobileCollapse();
     navSearch();
     htmlVideo();
+    scrollToTop();
   }
 
   init();

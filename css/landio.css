@@ -5227,10 +5227,17 @@ a.bg-danger:hover {
   line-height: 1.2; }
   .navbar.bg-inverse {
     background-color: transparent; }
+  @media (max-width: 47.9em) {
+    .navbar {
+      padding-top: 1.5625rem; } }
 
 @media (max-width: 47.9em) {
-  .navbar-toggleable-xs {
+  .navbar-toggleable-custom {
     margin-top: 3rem; } }
+
+@media (min-width: 48em) {
+  #collapsingNavbar {
+    display: block !important; } }
 
 @media (max-width: 47.9em) {
   .navbar-nav {
@@ -5434,9 +5441,12 @@ body {
 
 .jumbotron {
   margin-bottom: 0;
+  padding-top: 7rem;
   background: #663fb5 url(../img/bg-header.jpg) no-repeat center bottom;
-  background-size: cover;
   border-radius: 0; }
+  @media (min-width: 48em) and (min-height: 34.375em) {
+    .jumbotron {
+      background-size: cover; } }
   @media (max-width: 47.9em) {
     .jumbotron {
       padding-top: 6.25rem; } }
@@ -5447,7 +5457,7 @@ body {
   .display-3 {
     font-size: 2rem; } }
 
-@media (min-width: 48em) {
+@media (min-width: 48em) and (min-height: 34.375em) {
   .center-vertically {
     display: table;
     width: 100%;
@@ -5489,7 +5499,7 @@ h2 {
   font-size: .8125rem;
   line-height: 1.23;
   font-weight: 700; }
-  @media (min-width: 34em) {
+  @media (min-width: 48em) and (min-height: 34.375em) {
     .social-share {
       position: absolute;
       right: 0;
@@ -5768,8 +5778,6 @@ h3 {
     background-color: #ededed; }
 
 @media (max-width: 47.9em) {
-  .section-news .container {
-    padding: 0; }
   .section-news .p-r-0 {
     padding-right: 0.9375rem !important; }
   .section-news .p-l-0 {

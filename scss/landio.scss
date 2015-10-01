@@ -136,11 +136,20 @@
   &.bg-inverse {
     background-color: transparent;
   }
+  @include media-breakpoint-down(sm) {
+    padding-top: 1.5625rem;
+  }
 }
 
-.navbar-toggleable-xs {
+.navbar-toggleable-custom {
   @include media-breakpoint-down(sm) {
     margin-top: 3rem;
+  }
+}
+
+#collapsingNavbar {
+  @include media-breakpoint-up(md) {
+    display: block !important;
   }
 }
 
@@ -372,11 +381,19 @@ body {
   height: 100%;
 }
 
+$custom-min-width: 48em;
+$custom-min-height: 34.375em;
+
 .jumbotron {
   margin-bottom: 0;
+  padding-top: 7rem;
   background: #663fb5 url(../img/bg-header.jpg) no-repeat center bottom;
-  background-size: cover;
   border-radius: 0;
+
+  @media (min-width: $custom-min-width) and (min-height: $custom-min-height) {
+    background-size: cover;
+  }
+
   @include media-breakpoint-down(sm) {
     padding-top: 6.25rem;
   }
@@ -392,7 +409,7 @@ body {
 }
 
 .center-vertically {
-  @include media-breakpoint-up(md) {
+  @media (min-width: $custom-min-width) and (min-height: $custom-min-height) {
     display: table;
     width: 100%;
     height: 100%;
@@ -443,7 +460,7 @@ h2 {
   font-size: .8125rem;
   line-height: 1.23;
   font-weight: 700;
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $custom-min-width) and (min-height: $custom-min-height) {
     position: absolute;
     right: 0;
     bottom: 35px;
@@ -816,8 +833,7 @@ h3 {
 .section-news {
 
   @include media-breakpoint-down(sm) {
-    .container { padding: 0; }
-    // fixes Bootstrap zero-spacing on mobile
+
     .p-r-0 { padding-right: ($grid-gutter-width / 2) !important; }
     .p-l-0 { padding-left: ($grid-gutter-width / 2) !important; }
   }
