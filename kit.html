@@ -28,9 +28,13 @@
     <!-- Only needed Bootstrap bits + custom CSS in one file -->
     <link rel="stylesheet" href="css/landio.css">
   </head>
-  <body>
+  <body class="bg-faded p-y-lg">
 
-    <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
+    <div class="container">
+      <h3 class="p-y">Navbars</h3>
+    </div>
+
+    <nav class="navbar bg-white">
       <div class="container">
         <a class="navbar-brand" href="#">
           <span class="icon-logo"></span>
@@ -47,10 +51,10 @@
 
         <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
           <ul class="nav navbar-nav pull-right">
-            <li class="nav-item nav-item-toggable active">
+            <li class="nav-item nav-item-toggable">
               <a class="nav-link" href="#">About Land.io <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item nav-item-toggable">
+            <li class="nav-item nav-item-toggable active">
               <a class="nav-link" href="#">UI Kit</a>
             </li>
             <li class="nav-item nav-item-toggable">
@@ -123,18 +127,101 @@
       </div>
     </nav>
 
-    <header class="jumbotron bg-inverse text-center center-vertically" role="banner">
+    <hr class="invisible">
+
+    <nav class="navbar navbar-dark bg-inverse">
       <div class="container">
-        <h1 class="display-3">Land.io, blissful innovation.</h1>
-        <h2 class="m-b-lg">Craft your journey, <em>absolutely free</em>, with Land.io UI kit.</h2>
-        <a class="btn btn-secondary-outline m-b-md" href="#" role="button"><span class="icon-sketch"></span> Free for Sketch</a>
-        <ul class="list-inline social-share">
-          <li><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
-          <li><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
-          <li><a class="nav-link" href="#"><span class="icon-linkedin"></span> 356</a></li>
-        </ul>
+        <a class="navbar-brand" href="#">
+          <span class="icon-logo"></span>
+          <span class="sr-only">Landio</span>
+        </a>
+
+        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
+          &#9776;
+        </a>
+
+        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+          <span class="icon-user"></span>
+        </a>
+
+        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="#">About Land.io <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item nav-item-toggable active">
+              <a class="nav-link" href="#">UI Kit</a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="#">Github</a>
+            </li>
+            <li class="nav-item nav-item-toggable hidden-sm-up">
+              <form class="navbar-form">
+                <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+              </form>
+            </li>
+            <li class="navbar-divider hidden-sm-down"></li>
+            <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
+              <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="icon-search"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenu1">
+                <form class="navbar-form">
+                  <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+                </form>
+              </div>
+            </li>
+            <li class="nav-item dropdown hidden-sm-down">
+              <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/face5.jpg" height="40" width="40" alt="Avatar" class="img-circle"> <span class="icon-caret-down"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                <div class="media">
+                  <div class="media-left">
+                    <img src="img/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+                  </div>
+                  <div class="media-body media-middle">
+                    <h5 class="media-heading">Joel Fisher</h5>
+                    <h6>hey@joelfisher.com</h6>
+                  </div>
+                </div>
+                <a href="#" class="dropdown-item text-uppercase">View posts</a>
+                <a href="#" class="dropdown-item text-uppercase">Manage groups</a>
+                <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
+                <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
+                <a href="#" class="btn-circle has-gradient pull-right">
+                  <span class="sr-only">Edit</span>
+                  <span class="icon-edit"></span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
+          <div class="media m-t">
+            <div class="media-left">
+              <img src="img/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+            </div>
+            <div class="media-body media-middle">
+              <h5 class="media-heading">Joel Fisher</h5>
+              <h6>hey@joelfisher.com</h6>
+            </div>
+          </div>
+          <a href="#" class="dropdown-item text-uppercase">View posts</a>
+          <a href="#" class="dropdown-item text-uppercase">Manage groups</a>
+          <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
+          <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
+          <a href="#" class="btn-circle has-gradient pull-right m-b">
+            <span class="sr-only">Edit</span>
+            <span class="icon-edit"></span>
+          </a>
+        </div>
+
+        </div>
       </div>
-    </header>
+    </nav>
+
 
     <section class="section-intro bg-faded text-center">
       <div class="container">

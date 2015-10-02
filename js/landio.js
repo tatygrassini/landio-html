@@ -31,16 +31,16 @@
 
   function navSearch() {
     // hide first nav items when search is opened
-    $('#searchDropdown').on('show.bs.dropdown', function () {
-      $('.navbar-nav .nav-item, .navbar-nav .navbar-divider').not('.navbar-nav .dropdown').addClass('sr-only');
+    $('.nav-dropdown-search').on('show.bs.dropdown', function () {
+      $(this).siblings().not('.navbar-nav .dropdown').addClass('sr-only');
     });
     // cursor focus
-    $('#searchDropdown').on('shown.bs.dropdown', function () {
-      $('#navbar-search-input').focus();
+    $('.nav-dropdown-search').on('shown.bs.dropdown', function () {
+      $('.navbar-search-input').focus();
     });
     // show all nav items when search is closed
-    $('#searchDropdown').on('hide.bs.dropdown', function () {
-      $('.navbar-nav .nav-item, .navbar-nav .navbar-divider').removeClass('sr-only');
+    $('.nav-dropdown-search').on('hide.bs.dropdown', function () {
+      $(this).siblings().removeClass('sr-only');
     });
   }
 
