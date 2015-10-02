@@ -5630,7 +5630,7 @@ h3 {
 
 .has-light-mask, .video-js {
   position: relative; }
-  .has-light-mask:before, .video-js:before {
+  .has-light-mask:after, .video-js:after {
     position: absolute;
     content: "";
     top: 0;
@@ -5639,6 +5639,9 @@ h3 {
     height: 100%;
     background-color: rgba(195, 199, 203, 0.6);
     z-index: 1; }
+
+figure:hover.has-light-mask:after, figure.video-js:hover:after {
+  background-color: transparent; }
 
 .icon-play-button {
   position: absolute;
@@ -5880,18 +5883,18 @@ h3 {
     position: absolute;
     font-size: 1.25rem;
     top: 17px;
-    left: 33px;
+    left: 7%;
     color: rgba(88, 89, 91, 0.5); }
     .has-icon-left span:after {
+      position: absolute;
       content: "";
+      top: -2px;
+      left: 158%;
       width: 1px;
       height: 1.8125rem;
-      background-color: #ededef;
-      position: absolute;
-      top: -2px;
-      left: 38px; }
+      background-color: #ededef; }
   .has-icon-left .form-control {
-    padding-left: 4.5625rem; }
+    padding-left: 65px; }
 
 .btn-block {
   padding-right: 0;

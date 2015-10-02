@@ -639,7 +639,7 @@ h3 {
 
 .has-light-mask {
   position: relative;
-  &:before {
+  &:after {
     position: absolute;
     content: "";
     top: 0;
@@ -650,6 +650,13 @@ h3 {
     z-index: 1;
   }
 }
+
+figure:hover {
+  &.has-light-mask:after {
+    background-color: transparent;
+  }
+}
+
 
 .icon-play-button {
   position: absolute;
@@ -959,20 +966,20 @@ h3 {
     position: absolute;
     font-size: 1.25rem;
     top: 17px;
-    left: 33px;
+    left: 7%;
     color: rgba(88,89,91,.5);
     &:after {
+      position: absolute;
       content: "";
+      top: -2px;
+      left: 158%;
       width: 1px;
       height: 1.8125rem;
       background-color: #ededef;
-      position: absolute;
-      top: -2px;
-      left: 38px;
     }
   }
   .form-control {
-    padding-left: 4.5625rem;
+    padding-left: 65px;
   }
 }
 
