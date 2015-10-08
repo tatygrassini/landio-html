@@ -154,7 +154,8 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
   }
 }
 
-#collapsingNavbar {
+#collapsingNavbar,
+#collapsingNavbarInverse {
   @include media-breakpoint-up(md) {
     display: block !important;
   }
@@ -184,13 +185,20 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
 }
 
 @include media-breakpoint-down(sm) {
-  .navbar-dark .navbar-nav .nav-link {
-    display: block;
-    padding: 1rem 30px;
-    color: $gray;
-    &:focus,
-    &:hover {
-      color: lighten($gray, 20%);
+  .navbar-dark .navbar-nav {
+    .nav-item {
+      background-color: transparent;
+    }
+    .nav-link {
+      display: block;
+      color: darken(#fff, 20%);
+      &:focus,
+      &:hover {
+        color: #fff;
+      }
+    }
+    .active .nav-link {
+      color: #fff;
     }
   }
 }
@@ -208,13 +216,13 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
   @include media-breakpoint-down(sm) {
     color: $brand-primary;
   }
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     box-shadow: 0 2px 0 rgba(66, 71, 83, 0.2);
   }
 }
 
 .navbar-dark .navbar-nav .active > .nav-link {
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2);
   }
 }
@@ -328,7 +336,8 @@ h6 {
 }
 
 .navbar-form .form-control {
-  padding: 1rem 30px 1rem 15px;
+  padding: 1rem 0 1rem 15px;
+  // padding: 1rem 30px 1rem 15px;
   background: transparent;
   border: 0;
   font-size: .9375rem;
@@ -958,7 +967,7 @@ input.has-icon-left:-webkit-autofill {
     position: absolute;
     content: "";
     top: 14px;
-    left: 60px;
+    left: 48px;
     width: 1px;
     height: 1.8125rem;
     background-color: #ededef;
@@ -966,7 +975,7 @@ input.has-icon-left:-webkit-autofill {
   &:after {
     position: absolute;
     top: 14px;
-    left: 28px;
+    left: 16px;
     width: 30px;
     height: 30px;
     content: "";
@@ -974,7 +983,12 @@ input.has-icon-left:-webkit-autofill {
     background-position: 5% center;
     z-index: 9999;
   }
-  .form-control { padding-left: 65px; }
+  .form-control { padding-left: 60px; }
+
+  // @include media-breakpoint-up(md) {
+  //   &:before { left: 60px; }
+  //   &:after  { left: 28px; }
+  // }
 }
 
 .form-control-name:after {
@@ -1201,8 +1215,10 @@ input.has-icon-left:-webkit-autofill {
     }
   }
   h4 {
-    margin-bottom: 0;
     font-family: $font-family-sans-serif-custom;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
   }
   small {
     display: block;
@@ -1213,15 +1229,17 @@ input.has-icon-left:-webkit-autofill {
   .card-stat {
     position: relative;
   }
-  .card-stat + .card-stat:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 100%;
-    bottom: 0;
-    width: 1px;
-    height: 100%;
-    background-color: #e9eaec;
+  @include media-breakpoint-up(md) {
+    .card-stat + .card-stat:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: 1px;
+      height: 100%;
+      background-color: #e9eaec;
+    }
   }
 }
 

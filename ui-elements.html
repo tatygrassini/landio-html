@@ -31,7 +31,7 @@
   <body class="bg-faded p-y-lg">
 
     <div class="container">
-      <h3 class="p-y">Land.io <strong>UI Elements</strong></h3>
+      <h3 class="p-y text-center">Land.io <strong>UI Elements</strong></h3>
     </div>
 
     <nav class="navbar bg-white">
@@ -52,10 +52,10 @@
         <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
           <ul class="nav navbar-nav pull-right">
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="#">About Land.io <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">About Land.io</a>
             </li>
             <li class="nav-item nav-item-toggable active">
-              <a class="nav-link" href="#">UI Kit</a>
+              <a class="nav-link" href="#">UI Kit <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item nav-item-toggable">
               <a class="nav-link" href="#">Github</a>
@@ -136,21 +136,21 @@
           <span class="sr-only">Landio</span>
         </a>
 
-        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
+        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbarInverse" aria-expanded="false" aria-controls="collapsingNavbarInverse">
           &#9776;
         </a>
 
-        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-right" data-toggle="collapse" href="#collapsingMobileUserInverse" aria-expanded="false" aria-controls="collapsingMobileUserInverse">
           <span class="icon-user"></span>
         </a>
 
-        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+        <div id="collapsingNavbarInverse" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbarInverse">
           <ul class="nav navbar-nav pull-right">
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="#">About Land.io <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">About Land.io</a>
             </li>
             <li class="nav-item nav-item-toggable active">
-              <a class="nav-link" href="#">UI Kit</a>
+              <a class="nav-link" href="#">UI Kit <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item nav-item-toggable">
               <a class="nav-link" href="#">Github</a>
@@ -198,7 +198,7 @@
           </ul>
         </div>
 
-        <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
+        <div id="collapsingMobileUserInverse" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUserInverse">
           <div class="media m-t">
             <div class="media-left">
               <img src="img/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
@@ -225,9 +225,8 @@
     <hr class="invisible">
 
     <div class="container">
-
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6 col-xl-4">
           <div class="form-group has-icon-left form-control-name">
             <label class="sr-only" for="inputName">Your name</label>
             <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your name">
@@ -252,32 +251,10 @@
           <hr class="invisible">
 
           <button type="submit" class="btn btn-primary has-gradient btn-block">Sign up for free!</button>
-        </div>
-        <div class="col-md-5">
-          <div class="card card-inverse card-social text-center">
-            <div class="card-block has-gradient">
-              <img src="img/face5.jpg" height="90" width="90" alt="Avatar" class="img-circle">
-              <h5 class="card-title">Joel Fisher</h5>
-              <h6 class="card-subtitle">hey@joelfisher.com</h6>
-              <button type="submit" class="btn btn-secondary-outline btn-sm">Follow</button>
-            </div>
-            <div class="card-block container">
-              <div class="row">
-                <div class="col-md-4 card-stat">
-                  <h4>149 <small class="text-uppercase">Shots</small></h4>
-                </div>
-                <div class="col-md-4 card-stat">
-                  <h4>1,763 <small class="text-uppercase">Follows</small></h4>
-                </div>
-                <div class="col-md-4 card-stat">
-                  <h4>324 <small>D/Ls</small></h4>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <hr class="invisible">
-
+        </div>
+        <div class="col-md-6 col-xl-4">
           <a href="#" class="btn btn-social btn-block bg-facebook">
             <span class="icon-facebook"></span> Login with Facebook
           </a>
@@ -319,37 +296,14 @@
               <span class="icon-linkedin"></span>
             </a>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="dropdown open">
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2" style="z-index:999;position:relative;">
-              <div class="media">
-                <div class="media-left">
-                  <img src="img/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
-                </div>
-                <div class="media-body media-middle">
-                  <h5 class="media-heading">Joel Fisher</h5>
-                  <h6>hey@joelfisher.com</h6>
-                </div>
-              </div>
-              <a href="#" class="dropdown-item text-uppercase">View posts</a>
-              <a href="#" class="dropdown-item text-uppercase">Manage groups</a>
-              <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
-              <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
-              <a href="#" class="btn-circle has-gradient pull-right">
-                <span class="sr-only">Edit</span>
-                <span class="icon-edit"></span>
-              </a>
-            </div>
-          </div>
-
-          <div class="clearfix"></div>
 
           <hr class="invisible">
-
+        </div>
+        <div class="clearfix hidden-xl-up"></div>
+        <div class="col-md-4">
           <div class="card card-chart">
             <div id="chart-holder" class="center-block" data-active="90%">
-              <canvas id="chart-area" width="200" height="200"></canvas>
+              <canvas id="chart-area" class="center-block" width="200" height="200"></canvas>
             </div>
             <ul class="list-group">
               <li class="list-group-item complete">
@@ -366,13 +320,37 @@
               </li>
             </ul>
           </div>
+
+          <hr class="invisible">
+        </div>
+        <div class="clearfix hidden-md-up"></div>
+        <div class="col-md-8 col-xl-6 col-xl-offset-3">
+          <div class="card card-inverse card-social text-center">
+            <div class="card-block has-gradient">
+              <img src="img/face5.jpg" height="90" width="90" alt="Avatar" class="img-circle">
+              <h5 class="card-title">Joel Fisher</h5>
+              <h6 class="card-subtitle">hey@joelfisher.com</h6>
+              <button type="submit" class="btn btn-secondary-outline btn-sm">Follow</button>
+            </div>
+            <div class="card-block container">
+              <div class="row">
+                <div class="col-md-4 card-stat">
+                  <h4>149 <small class="text-uppercase">Shots</small></h4>
+                </div>
+                <div class="col-md-4 card-stat">
+                  <h4>1,763 <small class="text-uppercase">Follows</small></h4>
+                </div>
+                <div class="col-md-4 card-stat">
+                  <h4>324 <small>D/Ls</small></h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <hr class="invisible">
-
-    <section class="section-news">
+    <section class="section-news" style="padding-bottom:2rem;">
       <div class="container">
       <div class="bg-inverse">
         <div class="row">
@@ -396,12 +374,16 @@
       </div>
     </section>
 
+    <h5 class="text-center">Video JS</h5>
+
     <video id="demo_video" class="video-js vjs-default-skin vjs-big-play-centered" controls poster="img/video-poster.jpg" data-setup='{}'>
      <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
      <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
     </video>
 
     <hr class="invisible">
+
+    <h5 class="text-center">Vimeo (Bootstrap modal)</h5>
 
     <figure class="has-light-mask">
       <a class="icon-play-button" href="#videoModal" data-toggle="modal" data-target="#videoModal">
@@ -412,8 +394,10 @@
 
     <hr class="invisible">
 
+    <h5 class="text-center">YouTube (Bootstrap modal)</h5>
+
     <figure class="has-light-mask">
-      <a class="icon-play-button" href="#youtubeModal" data-toggle="modal" data-target="#youtubeModal">
+      <a id="youtube-trigger" class="icon-play-button" href="#" data-toggle="modal" data-target="#youtubeModal" data-video="http://www.youtube.com/embed/loFtozxZG0s">
         <span class="icon-play"></span>
       </a>
       <img class="img-responsive img-responsive-custom" src="img/video-poster.jpg" alt="Video poster">
@@ -493,7 +477,7 @@
         <div class="modal-content">
           <!-- 16:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe id="youtube-play" class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            <iframe id="youtube-play" class="embed-responsive-item" src="" allowfullscreen></iframe>
           </div>
         </div>
       </div>

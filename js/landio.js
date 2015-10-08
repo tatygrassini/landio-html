@@ -34,6 +34,15 @@
       $('#collapsingMobileUser').removeClass('in');
       $('[data-target="#collapsingMobileUser"]').attr('aria-expanded', 'false');
     });
+    // dark navbar
+    $('#collapsingMobileUserInverse').on('show.bs.collapse', function () {
+      $('#collapsingNavbarInverse').removeClass('in');
+      $('[data-target="#collapsingNavbarInverse"]').attr('aria-expanded', 'false');
+    });
+    $('#collapsingNavbarInverse').on('show.bs.collapse', function () {
+      $('#collapsingMobileUserInverse').removeClass('in');
+      $('[data-target="#collapsingMobileUserInverse"]').attr('aria-expanded', 'false');
+    });
   }
 
   function navSearch() {
@@ -119,6 +128,8 @@
 
   function vimeoModal() {
 
+    // VIMEO
+
     $('#videoModal').on('shown.bs.modal', function () {
       $("#vimeo-play").vimeo("play");
     });
@@ -127,25 +138,22 @@
       $("#vimeo-play").vimeo("pause");
     });
 
-    var youtubeSrc = $("#youtube-play").attr("src"),
+    // YOUTUBE
 
-    $('#youtubeModal').on('shown.bs.modal', function () {
-      youtubeSrc + "?autoplay=1";
+    $('#youtube-trigger').click(function () {
+
+      var videoSRC     = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?autoplay=1&html5=1&rel=0&showinfo=0";
+
+      $('#youtubeModal').on('shown.bs.modal', function () {
+        $('#youtube-play').attr('src', videoSRCauto);
+      });
+
+      $('#youtubeModal').on('hidden.bs.modal', function () {
+        $('#youtube-play').attr('src', videoSRC);
+      });
+
     });
-
-
-// $(".video").click(function () {
-//   var theModal = $(this).data("target"),
-//   videoSRC = $(this).attr("data-video"),
-//   videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-//   $(theModal + ' iframe').attr('src', videoSRCauto);
-//   $(theModal + ' button.close').click(function () {
-//     $(theModal + ' iframe').attr('src', videoSRC);
-//   });
-//   $(theModal).on('hidden.bs.modal', function (e) {
-//     $(theModal + ' iframe').attr('src', videoSRC);
-//   });
-// });
 
   }
 
