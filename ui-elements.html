@@ -80,7 +80,7 @@
               <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="img/face5.jpg" height="40" width="40" alt="Avatar" class="img-circle"> <span class="icon-caret-down"></span>
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-user" aria-labelledby="dropdownMenu2">
                 <div class="media">
                   <div class="media-left">
                     <img src="img/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
@@ -175,7 +175,7 @@
               <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="img/face5.jpg" height="40" width="40" alt="Avatar" class="img-circle"> <span class="icon-caret-down"></span>
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-user" aria-labelledby="dropdownMenu2">
                 <div class="media">
                   <div class="media-left">
                     <img src="img/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
@@ -225,24 +225,22 @@
     <hr class="invisible">
 
     <div class="container">
+
       <div class="row">
         <div class="col-md-4">
-          <div class="form-group has-icon-left">
+          <div class="form-group has-icon-left form-control-name">
             <label class="sr-only" for="inputName">Your name</label>
-            <input type="text" class="form-control form-control-lg form-control-name" id="inputName" placeholder="Your name">
-            <span class="icon-user"></span>
+            <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your name">
           </div>
 
-          <div class="form-group has-icon-left">
+          <div class="form-group has-icon-left form-control-email">
             <label class="sr-only" for="inputEmail">Email address</label>
-            <input type="email" class="form-control form-control-lg form-control-email" id="inputEmail" placeholder="Email address" autocomplete="off">
-            <span class="icon-email"></span>
+            <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email address" autocomplete="off">
           </div>
 
-          <div class="form-group has-icon-left">
+          <div class="form-group has-icon-left form-control-password">
             <label class="sr-only" for="inputPassword">Enter a password</label>
-            <input type="password" class="form-control form-control-lg form-control-password" id="inputPassword" placeholder="Enter a password" autocomplete="off">
-            <span class="icon-lock"></span>
+            <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Enter a password" autocomplete="off">
           </div>
 
           <button type="submit" class="btn btn-primary btn-block">Sign up for free!</button>
@@ -254,7 +252,120 @@
           <hr class="invisible">
 
           <button type="submit" class="btn btn-primary has-gradient btn-block">Sign up for free!</button>
+        </div>
+        <div class="col-md-5">
+          <div class="card card-inverse card-social text-center">
+            <div class="card-block has-gradient">
+              <img src="img/face5.jpg" height="90" width="90" alt="Avatar" class="img-circle">
+              <h5 class="card-title">Joel Fisher</h5>
+              <h6 class="card-subtitle">hey@joelfisher.com</h6>
+              <button type="submit" class="btn btn-secondary-outline btn-sm">Follow</button>
+            </div>
+            <div class="card-block container">
+              <div class="row">
+                <div class="col-md-4 card-stat">
+                  <h4>149 <small class="text-uppercase">Shots</small></h4>
+                </div>
+                <div class="col-md-4 card-stat">
+                  <h4>1,763 <small class="text-uppercase">Follows</small></h4>
+                </div>
+                <div class="col-md-4 card-stat">
+                  <h4>324 <small>D/Ls</small></h4>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <hr class="invisible">
+
+          <a href="#" class="btn btn-social btn-block bg-facebook">
+            <span class="icon-facebook"></span> Login with Facebook
+          </a>
+
+          <hr class="invisible">
+
+          <a href="#" class="btn btn-social btn-block bg-twitter">
+            <span class="icon-twitter"></span> Login with Twitter
+          </a>
+
+          <hr class="invisible">
+
+          <a href="#" class="btn btn-social btn-block bg-google">
+            <span class="icon-google"></span> Login with Google
+          </a>
+
+          <hr class="invisible">
+
+          <a href="#" class="btn btn-social btn-block bg-linkedin">
+            <span class="icon-linkedin"></span> Login with LinkedIn
+          </a>
+
+          <hr class="invisible">
+
+          <div class="text-center">
+            <a href="#" class="btn btn-social btn-social-icon btn-social-facebook">
+              <span class="icon-facebook"></span>
+            </a>
+
+            <a href="#" class="btn btn-social btn-social-icon btn-social-twitter">
+              <span class="icon-twitter"></span>
+            </a>
+
+            <a href="#" class="btn btn-social btn-social-icon btn-social-google">
+              <span class="icon-google"></span>
+            </a>
+
+            <a href="#" class="btn btn-social btn-social-icon btn-social-linkedin">
+              <span class="icon-linkedin"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dropdown open">
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2" style="z-index:999;position:relative;">
+              <div class="media">
+                <div class="media-left">
+                  <img src="img/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+                </div>
+                <div class="media-body media-middle">
+                  <h5 class="media-heading">Joel Fisher</h5>
+                  <h6>hey@joelfisher.com</h6>
+                </div>
+              </div>
+              <a href="#" class="dropdown-item text-uppercase">View posts</a>
+              <a href="#" class="dropdown-item text-uppercase">Manage groups</a>
+              <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
+              <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
+              <a href="#" class="btn-circle has-gradient pull-right">
+                <span class="sr-only">Edit</span>
+                <span class="icon-edit"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <hr class="invisible">
+
+          <div class="card card-chart">
+            <div id="chart-holder" class="center-block" data-active="90%">
+              <canvas id="chart-area" width="200" height="200"></canvas>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item complete">
+                <span class="label pull-right">324</span>
+                <span class="icon-status status-completed"></span> Completed
+              </li>
+              <li class="list-group-item">
+                <span class="label pull-right">34</span>
+                <span class="icon-status status-backlog"></span> In backlog
+              </li>
+              <li class="list-group-item">
+                <span class="label pull-right">20</span>
+                <span class="icon-status status-noticket"></span> Without ticket
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -285,6 +396,59 @@
       </div>
     </section>
 
+    <video id="demo_video" class="video-js vjs-default-skin vjs-big-play-centered" controls poster="img/video-poster.jpg" data-setup='{}'>
+     <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+     <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+    </video>
+
+    <hr class="invisible">
+
+    <figure class="has-light-mask">
+      <a class="icon-play-button" href="#videoModal" data-toggle="modal" data-target="#videoModal">
+        <span class="icon-play"></span>
+      </a>
+      <img class="img-responsive img-responsive-custom" src="img/video-poster.jpg" alt="Video poster">
+    </figure>
+
+    <hr class="invisible">
+
+    <figure class="has-light-mask">
+      <a class="icon-play-button" href="#youtubeModal" data-toggle="modal" data-target="#youtubeModal">
+        <span class="icon-play"></span>
+      </a>
+      <img class="img-responsive img-responsive-custom" src="img/video-poster.jpg" alt="Video poster">
+    </figure>
+
+    <hr class="invisible">
+
+    <footer class="section-footer bg-white" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-5">
+            <div class="media">
+              <div class="media-left">
+                <span class="media-object icon-logo display-1"></span>
+              </div>
+              <small class="media-body media-bottom">
+                &copy; Land.io 2015. <br>
+                Designed by Peter Finlan, exclusively for Codrops.
+              </small>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7">
+            <ul class="list-inline m-b-0">
+              <li class="active"><a href="#">About Land.io</a></li>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a class="scroll-top" href="#totop">Back to top <span class="icon-caret-up"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <hr class="invisible">
+
     <footer class="section-footer bg-inverse" role="contentinfo">
       <div class="container">
         <div class="row">
@@ -311,10 +475,32 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- video modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal-dialog modal-video" role="document">
+        <div class="modal-content">
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="vimeo-play" src="https://player.vimeo.com/video/98330466?color=6c59b4&byline=0&portrait=0&badge=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- video modal -->
+    <div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog" aria-labelledby="youtubeModal" aria-hidden="true">
+      <div class="modal-dialog modal-video" role="document">
+        <div class="modal-content">
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="youtube-play" class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- only needed Bootstrap JS components + 3rd party plugins + custom -->
     <script src="js/landio.min.js"></script>
-
   </body>
 </html>

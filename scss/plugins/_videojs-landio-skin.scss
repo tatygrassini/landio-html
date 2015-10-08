@@ -32,7 +32,8 @@
 .vjs-menu-content,
 .vjs-has-started .vjs-poster,
 .vjs-controls-disabled .vjs-poster,
-.vjs-using-native-controls .vjs-poster {
+.vjs-using-native-controls .vjs-poster,
+.ytp-button {
   display: none !important;
 }
 
@@ -353,7 +354,7 @@
 
 }
 
-.vjs-has-started.has-light-mask:before { z-index: 0; }
+.video-js.vjs-has-started:after { z-index: -1; }
 
 .video-js .vjs-tech {
   position: absolute;

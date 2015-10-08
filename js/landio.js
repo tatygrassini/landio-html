@@ -16,6 +16,13 @@
 
   // Video JS
   // @codekit-prepend "plugins/video.js";
+  // @codekit-prepend "plugins/video-youtube.js";
+
+  // Vimeo modal autoplay
+  // @codekit-prepend "plugins/jquery.vimeo.api.js";
+
+  // Donut Chart
+  // @codekit-prepend "plugins/chart.js";
 
   function navMobileCollapse() {
     // avoid having both mobile navs opened at the same time
@@ -45,7 +52,7 @@
   }
 
   function htmlVideo() {
-    videojs("my_video_1", {
+    videojs("demo_video", {
         controlBar: {
           timeDivider: false,
           fullscreenToggle: false,
@@ -56,7 +63,7 @@
         "width": "auto"
     }).ready(function() {
         var myPlayer = this;
-        var aspectRatio = 5 / 12; // aspect ratio 12:5 (960x400)
+        var aspectRatio = 5 / 12; // aspect ratio 12:5 (video frame 960x400)
         function resizeVideoJS() {
             var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
             myPlayer.width(width).height(width * aspectRatio);
@@ -75,11 +82,80 @@
     });
   }
 
+  function donutChart() {
+    var doughnutData = [
+      {
+        value: 324,
+        color:"#5e98e3",
+        highlight: "#424753",
+        label: "Completed"
+      },
+      {
+        value: 34,
+        color: "#59d0bd",
+        highlight: "#424753",
+        label: "In backlog"
+      },
+      {
+        value: 20,
+        color: "#e8e9ec",
+        highlight: "#424753",
+        label: "Without ticket"
+      }
+    ];
+    window.onload = function(){
+      var c = document.getElementById("chart-area");
+      if (c != null) {
+        var ctx = c.getContext("2d");
+        window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {
+          responsive : true,
+          percentageInnerCutout : 80
+        });
+      } else {
+        return false
+      }
+    };
+  }
+
+  function vimeoModal() {
+
+    $('#videoModal').on('shown.bs.modal', function () {
+      $("#vimeo-play").vimeo("play");
+    });
+
+    $('#videoModal').on('hidden.bs.modal', function () {
+      $("#vimeo-play").vimeo("pause");
+    });
+
+    var youtubeSrc = $("#youtube-play").attr("src"),
+
+    $('#youtubeModal').on('shown.bs.modal', function () {
+      youtubeSrc + "?autoplay=1";
+    });
+
+
+// $(".video").click(function () {
+//   var theModal = $(this).data("target"),
+//   videoSRC = $(this).attr("data-video"),
+//   videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+//   $(theModal + ' iframe').attr('src', videoSRCauto);
+//   $(theModal + ' button.close').click(function () {
+//     $(theModal + ' iframe').attr('src', videoSRC);
+//   });
+//   $(theModal).on('hidden.bs.modal', function (e) {
+//     $(theModal + ' iframe').attr('src', videoSRC);
+//   });
+// });
+
+  }
+
   function init() {
     navMobileCollapse();
     navSearch();
     htmlVideo();
     scrollToTop();
+    donutChart();
+    vimeoModal();
   }
 
   init();
