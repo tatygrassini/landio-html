@@ -495,7 +495,7 @@
 		},
 	"\/js\/bootstrap\/carousel.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/carousel.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/carousel.min.js",
@@ -506,7 +506,7 @@
 		},
 	"\/js\/bootstrap\/collapse.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/collapse.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/collapse.min.js",
@@ -517,7 +517,7 @@
 		},
 	"\/js\/bootstrap\/dropdown.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/dropdown.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/dropdown.min.js",
@@ -528,7 +528,7 @@
 		},
 	"\/js\/bootstrap\/modal.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/modal.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/modal.min.js",
@@ -583,7 +583,7 @@
 		},
 	"\/js\/bootstrap\/util.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/util.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/util.min.js",
@@ -605,7 +605,7 @@
 		},
 	"\/js\/landio.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/landio.min.js",
 		"outputAbbreviatedPath": "\/js\/landio.min.min.js",
