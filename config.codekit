@@ -108,7 +108,7 @@
 		"outputAbbreviatedPath": "\/img\/face1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face2.jpg": {
 		"fileType": 16384,
@@ -119,7 +119,7 @@
 		"outputAbbreviatedPath": "\/img\/face2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face3.jpg": {
 		"fileType": 16384,
@@ -130,7 +130,7 @@
 		"outputAbbreviatedPath": "\/img\/face3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face4.jpg": {
 		"fileType": 16384,
@@ -141,7 +141,7 @@
 		"outputAbbreviatedPath": "\/img\/face4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face5.jpg": {
 		"fileType": 16384,
@@ -152,7 +152,7 @@
 		"outputAbbreviatedPath": "\/img\/face5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/favicon\/android-chrome-144x144.png": {
 		"fileType": 32768,
@@ -449,7 +449,7 @@
 		"outputAbbreviatedPath": "\/img\/mock.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/video-poster.jpg": {
 		"fileType": 16384,
@@ -460,7 +460,7 @@
 		"outputAbbreviatedPath": "\/img\/video-poster.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
