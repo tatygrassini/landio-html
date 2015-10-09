@@ -8,22 +8,22 @@
 
 -----------------------------------------------------------------------------------*/
 
-// Fonts & Bootstrap
-// Global
-// Navbar
-// Header
-// Intro
-// Features
-// Video
-// Pricing
-// Testimonials
-// Text
-// News
-// Sign Up
-// Footer
-// Card Profile
-// Social Buttons
-// Donut chart
+//  Fonts & Bootstrap
+//  Global
+//  Navbar
+//  Header
+//  Intro
+//  Features
+//  Video
+//  Pricing
+//  Testimonials
+//  Text
+//  News
+//  Sign up
+//  Footer
+//  Profile card
+//  Social buttons
+//  Donut chart
 
 
 //
@@ -192,8 +192,19 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
   }
 }
 
-.navbar-nav {
-  @include media-breakpoint-down(sm) {
+@include media-breakpoint-down(sm) {
+  .navbar-nav {
+    .nav-item + .nav-item {
+      margin-left: 2rem;
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar-nav {
     float: none !important;
     width: 100%;
     .nav-item {
@@ -201,21 +212,13 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
       margin: 0 0 1px;
       float: none;
       text-align: right;
-      background-color: white;
+      background-color: #fff;
     }
     .form-control {
       text-align: right;
     }
   }
-  .nav-item + .nav-item {
-    margin-left: 2rem;
-    @include media-breakpoint-down(sm) {
-      margin-left: 0;
-    }
-  }
-}
 
-@include media-breakpoint-down(sm) {
   .navbar-dark .navbar-nav {
     .nav-item {
       background-color: transparent;
@@ -230,6 +233,23 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
     }
     .active .nav-link {
       color: #fff;
+    }
+  }
+
+  .bg-inverse-custom .navbar-nav {
+    .nav-item {
+      background-color: #fff;
+    }
+    .nav-link {
+      padding: 1rem;
+      color: lighten($gray, 20%);
+      &:focus,
+      &:hover {
+        color: $gray;
+      }
+    }
+    .active > .nav-link {
+      color: $brand-primary;
     }
   }
 }
@@ -346,7 +366,6 @@ h6 {
   &:focus,
   &:hover {
     color: #fff;
-    // background-color: $gray;
     @include gradient-directional(#663fb5, #663fb5);
   }
 }
@@ -368,7 +387,6 @@ h6 {
 
 .navbar-form .form-control {
   padding: 1rem 0 1rem 15px;
-  // padding: 1rem 30px 1rem 15px;
   background: transparent;
   border: 0;
   font-size: .9375rem;
@@ -763,9 +781,22 @@ figure { position: relative; }
     color: #aeb0b5;
   }
 
+  .list-group {
+    margin-bottom: 1rem;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 4.0625rem;
+    }
+  }
+
   .list-group-item {
+    padding: 0.45rem 1rem;
+    border-color: #ededef;
     background-color: transparent;
   }
+
+  .list-group-item:first-child { border-top-color: transparent; }
+
+  .list-group-item:last-child  { border-bottom-color: transparent; }
 }
 
 .pricing-box-currency,
@@ -785,22 +816,6 @@ figure { position: relative; }
 .pricing-box-price {
   font-size: 4.25rem;
   font-weight: 700;
-
-  .list-group {
-    margin-bottom: 1rem;
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 4.0625rem;
-    }
-  }
-
-  .list-group-item {
-    padding: 0.45rem 1rem;
-    border-color: #ededef;
-  }
-
-  .list-group-item:first-child { border-top-color: transparent; }
-
-  .list-group-item:last-child  { border-bottom-color: transparent; }
 }
 
 .pricing-best {
@@ -986,7 +1001,7 @@ figure { position: relative; }
 
 
 //
-// =Sign Up
+// =Sign up
 // --------------------------------------------------
 
 .form-group { margin-bottom: 1.875rem; }
@@ -1191,7 +1206,7 @@ input.has-icon-left:-webkit-autofill {
 
 
 //
-// =Card Profile
+// =Profile card
 // --------------------------------------------------
 
 .card-social {
@@ -1271,10 +1286,8 @@ input.has-icon-left:-webkit-autofill {
 
 
 //
-// =Social Buttons
+// =Social buttons
 // --------------------------------------------------
-
-
 
 $facebook: #3b5998;
 $twitter:  #55acee;

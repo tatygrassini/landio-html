@@ -3,16 +3,10 @@
 
   // Bootstrap JS
   // @codekit-prepend "bootstrap/util.js";
-  // @codekit-prepend "bootstrap/alert.js";
-  // @codekit-prepend "bootstrap/button.js";
   // @codekit-prepend "bootstrap/carousel.js";
   // @codekit-prepend "bootstrap/collapse.js";
   // @codekit-prepend "bootstrap/dropdown.js";
   // @codekit-prepend "bootstrap/modal.js";
-  // @codekit-prepend "bootstrap/scrollspy.js";
-  // @codekit-prepend "bootstrap/tab.js";
-  // @codekit-prepend "bootstrap/tooltip.js";
-  // @codekit-prepend "bootstrap/popover.js";
 
   // Video JS
   // @codekit-prepend "plugins/video.js";
@@ -62,23 +56,23 @@
 
   function htmlVideo() {
     videojs("demo_video", {
-        controlBar: {
-          timeDivider: false,
-          fullscreenToggle: false,
-          playToggle: false,
-          remainingTimeDisplay: false
-        },
-        "height": "auto",
-        "width": "auto"
+      controlBar: {
+        timeDivider: false,
+        fullscreenToggle: false,
+        playToggle: false,
+        remainingTimeDisplay: false
+      },
+      "height": "auto",
+      "width": "auto"
     }).ready(function() {
-        var myPlayer = this;
-        var aspectRatio = 5 / 12; // aspect ratio 12:5 (video frame 960x400)
-        function resizeVideoJS() {
-            var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
-            myPlayer.width(width).height(width * aspectRatio);
-        }
-        resizeVideoJS();
-        window.onresize = resizeVideoJS;
+      var myPlayer = this;
+      var aspectRatio = 5 / 12; // aspect ratio 12:5 (video frame 960x400)
+      function resizeVideoJS() {
+          var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
+          myPlayer.width(width).height(width * aspectRatio);
+      }
+      resizeVideoJS();
+      window.onresize = resizeVideoJS;
     });
   }
 
