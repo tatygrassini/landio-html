@@ -263,9 +263,6 @@
     content: "\e611"; // PLAY icon
     font-family: 'icomoon';
     font-size: 3.125rem;
-    // @include media-breakpoint-down(xs) {
-    //   font-size: 2.3rem;
-    // }
   }
 
   &:hover { cursor: pointer; }

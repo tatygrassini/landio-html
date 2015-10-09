@@ -8,8 +8,28 @@
 
 -----------------------------------------------------------------------------------*/
 
+// Fonts & Bootstrap
+// Global
+// Navbar
+// Header
+// Intro
+// Features
+// Video
+// Pricing
+// Testimonials
+// Text
+// News
+// Sign Up
+// Footer
+// Card Profile
+// Social Buttons
+// Donut chart
 
-// Google fonts, Icons and LANDIO variable overrides
+
+//
+// =Fonts & Bootstrap
+// --------------------------------------------------
+
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700");
 @import "icomoon.scss";
 
@@ -1401,50 +1421,3 @@ $linkedin: #0077b5;
     width: 170px;
   }
 }
-
-
-@media only screen and (max-width:600px) {
-
-  #DonutTicketsByDepartment {
-    width: 200px;
-    margin: 0 auto;
-    float: none;
-  }
-
-  #TicketByDepartmentLegends {
-    list-style-type: none;
-    padding-top: 0px !important;
-    margin : 0 auto;
-    display: inline-block;
-    text-align: left;
-  }
-
-  .title,
-  .author { display: block; text-align:center; }
-  .author { margin-top: 5px; }
-  .lt { display: block; }
-  .rt { display: none; }
-
-}
-
-#TicketByDepartmentLegends li {
-  margin-bottom: 10px;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 400;
-  color:#000;
-}
-
-#TicketByDepartmentLegends li span.icon {
-  width: 22px;
-  height: 22px;
-  float: left;
-}
-
-#TicketByDepartmentLegends li span.label {
-  display: block;
-  margin-left: 30px;
-  font-size: 15px;
-  line-height: 22px;
-}
-
-
