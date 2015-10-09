@@ -473,7 +473,7 @@
 		},
 	"\/js\/bootstrap\/alert.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/alert.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/alert.min.js",
@@ -484,7 +484,7 @@
 		},
 	"\/js\/bootstrap\/button.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/button.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/button.min.js",
@@ -539,7 +539,7 @@
 		},
 	"\/js\/bootstrap\/popover.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/popover.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/popover.min.js",
@@ -550,7 +550,7 @@
 		},
 	"\/js\/bootstrap\/scrollspy.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/scrollspy.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/scrollspy.min.js",
@@ -561,7 +561,7 @@
 		},
 	"\/js\/bootstrap\/tab.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/tab.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/tab.min.js",
@@ -572,7 +572,7 @@
 		},
 	"\/js\/bootstrap\/tooltip.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/tooltip.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/tooltip.min.js",
