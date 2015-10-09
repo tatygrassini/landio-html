@@ -10,7 +10,6 @@
 
   // Video JS
   // @codekit-prepend "plugins/video.js";
-  // @codekit-prepend "plugins/video-youtube.js";
 
   // Vimeo modal autoplay
   // @codekit-prepend "plugins/jquery.vimeo.api.js";

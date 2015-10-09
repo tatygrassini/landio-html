@@ -669,17 +669,6 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
-	"\/js\/plugins\/video-youtube.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/plugins\/video-youtube.js",
-		"outputAbbreviatedPath": "\/js\/plugins\/video-youtube.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
-		},
 	"\/js\/plugins\/video.js": {
 		"fileType": 64,
 		"ignore": 1,
