@@ -119,7 +119,7 @@
     };
   }
 
-  function vimeoModal() {
+  function videoModal() {
 
     // VIMEO
 
@@ -156,7 +156,7 @@
     htmlVideo();
     scrollToTop();
     donutChart();
-    vimeoModal();
+    videoModal();
   }
 
   init();
