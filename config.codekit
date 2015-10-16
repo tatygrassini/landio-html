@@ -589,7 +589,7 @@
 		"outputAbbreviatedPath": "\/js\/landio.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
 	"\/js\/landio.min.js": {
@@ -606,7 +606,7 @@
 	"\/js\/plugins\/chart.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/plugins\/chart.js",
 		"outputAbbreviatedPath": "\/js\/plugins\/chart.min.js",
 		"outputPathIsOutsideProject": 0,
@@ -1879,7 +1879,7 @@
 		"outputAbbreviatedPath": "\/css\/landio.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
