@@ -614,6 +614,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+	"\/js\/plugins\/jquery.placeholder.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/plugins\/jquery.placeholder.js",
+		"outputAbbreviatedPath": "\/js\/plugins\/jquery.placeholder.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/js\/plugins\/jquery.vimeo.api.js": {
 		"fileType": 64,
 		"ignore": 1,

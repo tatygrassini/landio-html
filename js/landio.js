@@ -8,6 +8,9 @@
   // @codekit-prepend "bootstrap/dropdown.js";
   // @codekit-prepend "bootstrap/modal.js";
 
+  // Placeholders
+  // @codekit-prepend "plugins/jquery.placeholder.js";
+
   // Video JS
   // @codekit-prepend "plugins/video.js";
 
@@ -16,6 +19,10 @@
 
   // Donut Chart
   // @codekit-prepend "plugins/chart.js";
+
+  function inputPlaceholders() {
+    $('input, textarea').placeholder();
+  }
 
   function navMobileCollapse() {
     // avoid having both mobile navs opened at the same time
