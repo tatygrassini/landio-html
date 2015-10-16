@@ -949,8 +949,6 @@ figure {
 // =Text
 // --------------------------------------------------
 
-
-
 .separator-x {
   position: relative;
   &:before {
@@ -1036,8 +1034,11 @@ figure {
   margin-bottom: 1.875rem;
 }
 
-.has-icon-left,
-input.has-icon-left:-webkit-autofill {
+.form-control:-webkit-autofill {
+  background-color: #fff;
+}
+
+.has-icon-left {
   position: relative;
   &:before {
     position: absolute;
@@ -1057,9 +1058,7 @@ input.has-icon-left:-webkit-autofill {
     height: 30px;
     content: "";
     background-repeat: no-repeat;
-    // background-position: 5% center;
-    background-position: center left 1rem;
-    background-size: .9rem;
+    background-position: 5% center;
   }
   .form-control {
     padding-left: 60px;
@@ -1347,16 +1346,16 @@ $google: #dc4e41;
 $linkedin: #0077b5;
 
 .bg-facebook {
-  background-color: #3b5998;
+  background-color: $facebook;
 }
 .bg-twitter {
-  background-color: #55acee;
+  background-color: $twitter;
 }
 .bg-google {
-  background-color: #dc4e41;
+  background-color: $google;
 }
 .bg-linkedin {
-  background-color: #0077b5;
+  background-color: $linkedin;
 }
 
 .btn-social {
