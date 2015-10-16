@@ -1034,10 +1034,6 @@ figure {
   margin-bottom: 1.875rem;
 }
 
-.form-control:-webkit-autofill {
-  background-color: #fff;
-}
-
 .has-icon-left {
   position: relative;
   &:before {
@@ -1091,6 +1087,7 @@ figure {
 
 .form-control-lg {
   font-size: 1rem;
+  height: 60px; // IE fix
 }
 
 .btn-block {
