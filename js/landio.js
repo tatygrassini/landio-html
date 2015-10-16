@@ -158,6 +158,7 @@
   }
 
   function init() {
+    inputPlaceholders();
     navMobileCollapse();
     navSearch();
     htmlVideo();
