@@ -107,9 +107,9 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
   background-color: transparent;
 }
 
-.bg-white {
-  background-color: #fff;
-}
+.bg-white { background-color: #fff; }
+
+.placeholder { color: $gray; }
 
 .section-intro,
 .section-features,
