@@ -1057,7 +1057,9 @@ input.has-icon-left:-webkit-autofill {
     height: 30px;
     content: "";
     background-repeat: no-repeat;
-    background-position: 5% center;
+    // background-position: 5% center;
+    background-position: center left 1rem;
+    background-size: .9rem;
   }
   .form-control {
     padding-left: 60px;
