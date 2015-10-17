@@ -9,6 +9,7 @@
 -----------------------------------------------------------------------------------*/
 
 //  Fonts & Bootstrap
+//  Waypoint animations
 //  Global
 //  Navbar
 //  Header
@@ -92,50 +93,26 @@
 
 
 //
-// =Helpers
+// =Waypoint animations
 // --------------------------------------------------
 
-.textselect-off {
-  user-select: none;
-}
+.wp { visibility: hidden; }
 
-.hidden-overflow {
-  overflow: hidden;
-}
+.wp-2 { animation-delay: 0.1s; }
 
-.stacking-top {
-  position: relative;
-  z-index: 10;
-}
-
-//
-// =Waypoint animations
-//
-
-.wp {
-  visibility: hidden;
-}
-
-.wp-2 {
-  animation-delay: 0.1s;
-}
-
-.wp-3 {
-  animation-delay: 0.2s;
-}
-
-.wp-5, .wp-6 {
-  animation-delay: 0.3s;
-  animation-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-
+.wp-3,
 .wp-8 {
   animation-delay: 0.2s;
 }
 
-.wp.animated {
-  visibility: visible;
+.wp-5,
+.wp-6 {
+  animation-delay: 0.3s;
+  animation-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
+
+.wp.animated { visibility: visible; }
+
 
 //
 // =Global
@@ -191,6 +168,8 @@ $font-family-sans-serif-custom: "Lato", sans-serif !default;
     padding-bottom: ($spacer-y * .5) !important;
   }
 }
+
+.textselect-off { user-select: none; }
 
 
 //
@@ -710,6 +689,7 @@ h3 {
   line-height: 1.178;
 }
 .section-intro {
+  overflow: hidden;
   .lead {
     margin-bottom: 2.5rem;
   }
@@ -955,6 +935,11 @@ figure {
   }
 }
 
+.stacking-top {
+  position: relative;
+  z-index: 10;
+}
+
 
 //
 // =Testimonials
@@ -1048,8 +1033,6 @@ figure {
 //
 // =Text
 // --------------------------------------------------
-
-
 
 .separator-x {
   position: relative;
@@ -1447,18 +1430,10 @@ $twitter: #55acee;
 $google: #dc4e41;
 $linkedin: #0077b5;
 
-.bg-facebook {
-  background-color: #3b5998;
-}
-.bg-twitter {
-  background-color: #55acee;
-}
-.bg-google {
-  background-color: #dc4e41;
-}
-.bg-linkedin {
-  background-color: #0077b5;
-}
+.bg-facebook { background-color: $facebook; }
+.bg-twitter { background-color: $twitter; }
+.bg-google { background-color: $google; }
+.bg-linkedin { background-color: $linkedin; }
 
 .btn-social {
   color: #fff;
