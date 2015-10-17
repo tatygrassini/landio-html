@@ -645,12 +645,12 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
-	"\/js\/plugins\/jquery.waypoints.min.js": {
+	"\/js\/plugins\/jquery.waypoints.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/plugins\/jquery.waypoints.min.js",
-		"outputAbbreviatedPath": "\/js\/plugins\/jquery.waypoints.min.min.js",
+		"inputAbbreviatedPath": "\/js\/plugins\/jquery.waypoints.js",
+		"outputAbbreviatedPath": "\/js\/plugins\/jquery.waypoints.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1932,7 +1932,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Manoela Ilic",
+"lastSavedByUser": "Taty Grassini",
 "manualImportLinks": {
 	},
 "projectAttributes": {

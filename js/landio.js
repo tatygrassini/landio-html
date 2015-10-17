@@ -9,7 +9,7 @@
   // @codekit-prepend "bootstrap/modal.js";
 
   // Waypoints
-  // @codekit-prepend "plugins/jquery.waypoints.min.js"
+  // @codekit-prepend "plugins/jquery.waypoints.js"
 
   // Placeholders
   // @codekit-prepend "plugins/jquery.placeholder.js";
