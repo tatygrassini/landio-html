@@ -589,7 +589,7 @@
 		"outputAbbreviatedPath": "\/js\/landio.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/js\/landio.min.js": {
