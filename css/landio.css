@@ -4155,6 +4155,43 @@ a.bg-danger:hover {
   opacity: 1;
   visibility: visible; }
 
+.textselect-off {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.hidden-overflow {
+  overflow: hidden; }
+
+.stacking-top {
+  position: relative;
+  z-index: 10; }
+
+.wp {
+  visibility: hidden; }
+
+.wp-2 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+
+.wp-3 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+.wp-5, .wp-6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          animation-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+
+.wp-8 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+.wp.animated {
+  visibility: visible; }
+
 .bg-inverse a,
 .bg-inverse a:focus,
 .bg-inverse a:hover {
@@ -4166,9 +4203,6 @@ a.bg-danger:hover {
 
 .bg-white {
   background-color: #fff; }
-
-.placeholder {
-  color: #424753; }
 
 .section-intro,
 .section-features,
@@ -4236,7 +4270,7 @@ a.bg-danger:hover {
 
 @media (max-width: 47.9em) {
   .navbar-toggleable-custom {
-    margin-top: 3rem; } }
+    clear: both; } }
 
 @media (min-width: 48em) {
   #collapsingNavbar,
@@ -4260,8 +4294,6 @@ a.bg-danger:hover {
       margin: 0 0 1px;
       text-align: right;
       background-color: #fff; }
-    .navbar-nav .form-control {
-      text-align: right; }
   .navbar-dark .navbar-nav .nav-item {
     background-color: transparent; }
   .navbar-dark .navbar-nav .nav-link {
@@ -4281,7 +4313,7 @@ a.bg-danger:hover {
     .bg-inverse-custom .navbar-nav .nav-link:hover {
       color: #424753; }
   .bg-inverse-custom .navbar-nav .active > .nav-link {
-    color: #6c59b4; } }
+    color: #6c59b4 !important; } }
 
 .navbar-fixed-top {
   position: absolute; }
@@ -4330,6 +4362,34 @@ a.bg-danger:hover {
     border-bottom: 1px solid #e9eaec; }
   .dropdown-menu .text-muted {
     color: rgba(66, 71, 83, 0.4) !important; }
+
+.dropdown-menu-animated {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  padding: 1.5rem 1.75rem;
+  margin-top: 0;
+  border: 0 none;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transform-origin: 100% 0%;
+      -ms-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-transform: scale3d(0.95, 0.95, 1) translate3d(0, -15px, 0);
+          transform: scale3d(0.95, 0.95, 1) translate3d(0, -15px, 0);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, visibility 0s 0.5s;
+          transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+          transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+
+.open > .dropdown-menu-animated {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+          transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+          transition: opacity 0.5s, transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
 
 .dropdown-menu-custom {
   overflow-y: auto;
@@ -4507,6 +4567,13 @@ body {
       padding-top: 6.25rem; } }
   .jumbotron .btn {
     padding: 1.2rem 2rem; }
+  .jumbotron a.jumbolink {
+    opacity: 0.6;
+    -webkit-transition: opacity 0.175s;
+            transition: opacity 0.175s; }
+  .jumbotron a.jumbolink:hover,
+  .jumbotron a.jumbolink:focus {
+    opacity: 1; }
 
 @media (max-width: 47.9em) {
   .display-3 {
@@ -4532,7 +4599,7 @@ h2 {
     font-weight: 500; }
 
 .btn {
-  padding-bottom: 1.3rem;
+  padding: 1.4rem 3.125rem 1.3rem;
   font-size: .8125rem;
   line-height: 1.1538;
   text-transform: uppercase;
@@ -4655,7 +4722,8 @@ figure {
     border: 0 none; }
 
 .has-light-mask, .video-js {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .has-light-mask:after, .video-js:after {
     position: absolute;
     top: 0;
@@ -4664,7 +4732,23 @@ figure {
     width: 100%;
     height: 100%;
     content: "";
-    background-color: rgba(195, 199, 203, 0.6); }
+    background-color: #c3c7cb;
+    -webkit-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+    opacity: 0.6; }
+  .has-light-mask:hover:after, .video-js:hover:after {
+    opacity: 0; }
+
+.image-effect {
+  overflow: hidden; }
+  .image-effect img {
+    -webkit-transform: scale3d(1.8, 1.8, 1);
+            transform: scale3d(1.8, 1.8, 1);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+            transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1); }
+  .image-effect:hover img {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1); }
 
 .icon-play-button {
   position: absolute;
@@ -4808,7 +4892,11 @@ figure {
       text-indent: inherit;
       border: 0;
       border-radius: 0;
-      opacity: .5; }
+      opacity: .5;
+      -webkit-transition: opacity 0.2s;
+              transition: opacity 0.2s; }
+      .section-testimonials .carousel-indicators li:hover {
+        opacity: .9; }
       .section-testimonials .carousel-indicators li.active {
         margin: 0;
         background-color: transparent;
@@ -4847,16 +4935,21 @@ figure {
     .section-news article {
       padding: 6.5rem 0; } }
 
-.section-news figure:hover.has-light-mask:after, .section-news figure.video-js:hover:after {
-  background-color: transparent; }
+.section-news .icon-arrow-right {
+  margin-left: .25rem;
+  font-size: .875rem;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+  display: inline-block; }
 
 .section-news h5 {
   margin-bottom: 1rem;
   line-height: 1.777; }
-
-.section-news .icon-arrow-right {
-  margin-left: .25rem;
-  font-size: .875rem; }
+  .section-news h5 a {
+    display: block; }
+  .section-news h5 a:hover .icon-arrow-right {
+    -webkit-transform: translate3d(15px, 0, 0);
+            transform: translate3d(15px, 0, 0); }
 
 .label {
   padding: 0.35em 0.85em;
@@ -4921,8 +5014,7 @@ figure {
     color: #6c59b4; }
 
 .form-control-lg {
-  font-size: 1rem;
-  height: 60px; }
+  font-size: 1rem; }
 
 .btn-block {
   padding-right: 0;
