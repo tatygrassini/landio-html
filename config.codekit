@@ -37,12 +37,12 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 183728,
+		"initialSize": 132136,
 		"inputAbbreviatedPath": "\/img\/bg-header.jpg",
 		"outputAbbreviatedPath": "\/img\/bg-header.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/bg-header.png": {
 		"fileType": 32768,
@@ -59,67 +59,67 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 58845,
+		"initialSize": 52963,
 		"inputAbbreviatedPath": "\/img\/bg-testimonials.jpg",
 		"outputAbbreviatedPath": "\/img\/bg-testimonials.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face1.jpg": {
 		"fileType": 16384,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3980,
+		"initialSize": 3290,
 		"inputAbbreviatedPath": "\/img\/face1.jpg",
 		"outputAbbreviatedPath": "\/img\/face1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6598,
+		"initialSize": 4154,
 		"inputAbbreviatedPath": "\/img\/face2.jpg",
 		"outputAbbreviatedPath": "\/img\/face2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3697,
+		"initialSize": 3681,
 		"inputAbbreviatedPath": "\/img\/face3.jpg",
 		"outputAbbreviatedPath": "\/img\/face3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2967,
+		"initialSize": 5886,
 		"inputAbbreviatedPath": "\/img\/face4.jpg",
 		"outputAbbreviatedPath": "\/img\/face4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/face5.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3993,
+		"initialSize": 3303,
 		"inputAbbreviatedPath": "\/img\/face5.jpg",
 		"outputAbbreviatedPath": "\/img\/face5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/favicon\/android-chrome-144x144.png": {
 		"fileType": 32768,
@@ -444,23 +444,23 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 22099,
+		"initialSize": 172657,
 		"inputAbbreviatedPath": "\/img\/mock.png",
 		"outputAbbreviatedPath": "\/img\/mock.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/video-poster.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 576951,
+		"initialSize": 92858,
 		"inputAbbreviatedPath": "\/img\/video-poster.jpg",
 		"outputAbbreviatedPath": "\/img\/video-poster.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -473,7 +473,7 @@
 		},
 	"\/js\/bootstrap\/alert.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/alert.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/alert.min.js",
@@ -484,7 +484,7 @@
 		},
 	"\/js\/bootstrap\/button.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/button.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/button.min.js",
@@ -539,7 +539,7 @@
 		},
 	"\/js\/bootstrap\/popover.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/popover.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/popover.min.js",
@@ -550,7 +550,7 @@
 		},
 	"\/js\/bootstrap\/scrollspy.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/scrollspy.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/scrollspy.min.js",
@@ -561,7 +561,7 @@
 		},
 	"\/js\/bootstrap\/tab.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/tab.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/tab.min.js",
@@ -572,7 +572,7 @@
 		},
 	"\/js\/bootstrap\/tooltip.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/tooltip.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/tooltip.min.js",
@@ -600,7 +600,7 @@
 		"outputAbbreviatedPath": "\/js\/landio.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
 	"\/js\/landio.min.js": {
@@ -617,7 +617,7 @@
 	"\/js\/plugins\/chart.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/plugins\/chart.js",
 		"outputAbbreviatedPath": "\/js\/plugins\/chart.min.js",
 		"outputPathIsOutsideProject": 0,
@@ -1335,8 +1335,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/scss\/bootstrap\/bootstrap-flex.scss",
 		"outputAbbreviatedPath": "\/scss\/css\/bootstrap-flex.css",
 		"outputPathIsOutsideProject": 0,
@@ -1351,8 +1351,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/scss\/bootstrap\/bootstrap-grid.scss",
 		"outputAbbreviatedPath": "\/scss\/css\/bootstrap-grid.css",
 		"outputPathIsOutsideProject": 0,
@@ -1367,8 +1367,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/scss\/bootstrap\/bootstrap-reboot.scss",
 		"outputAbbreviatedPath": "\/scss\/css\/bootstrap-reboot.css",
 		"outputPathIsOutsideProject": 0,
@@ -1901,7 +1901,7 @@
 		"outputAbbreviatedPath": "\/css\/landio.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
