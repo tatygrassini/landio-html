@@ -376,7 +376,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 }
 
 .dropdown-menu-custom {
-  overflow-y: auto;
+  overflow-y: hidden;
   background-color: #fff;
   border: 0 none;
   .media {
