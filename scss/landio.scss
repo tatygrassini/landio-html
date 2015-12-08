@@ -88,35 +88,39 @@
 // Video JS
 @import 'plugins/videojs-landio-skin';
 
-// Animate CSS
-@import 'plugins/animate';
+// Animate CSS (none for mobile)
+@include media-breakpoint-up(md) {
+  @import 'plugins/animate';
+}
 
 
 //
 // =Waypoint animations
 // --------------------------------------------------
 
-.wp {
-  visibility: hidden;
-}
+@include media-breakpoint-up(md) {
+  .wp {
+    visibility: hidden;
+  }
 
-.wp-2 {
-  animation-delay: .1s;
-}
+  .wp-2 {
+    animation-delay: .1s;
+  }
 
-.wp-3,
-.wp-8 {
-  animation-delay: .2s;
-}
+  .wp-3,
+  .wp-8 {
+    animation-delay: .2s;
+  }
 
-.wp-5,
-.wp-6 {
-  animation-timing-function: cubic-bezier(.2, 1, .3, 1);
-  animation-delay: .3s;
-}
+  .wp-5,
+  .wp-6 {
+    animation-timing-function: cubic-bezier(.2, 1, .3, 1);
+    animation-delay: .3s;
+  }
 
-.wp.animated {
-  visibility: visible;
+  .wp.animated {
+    visibility: visible;
+  }
 }
 
 
@@ -186,11 +190,12 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 .navbar-toggler {
   padding: 0;
-  margin-top: -.3rem;
+  margin-top: 1.5625rem;
   margin-left: .75rem;
   font-size: 2rem;
   border: 0;
   border-radius: 0;
+
   &:focus {
     outline: 0;
   }
@@ -198,6 +203,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 .bg-inverse .navbar-toggler {
   color: rgba(255, 255, 255, .75);
+
   &:focus,
   &:hover {
     color: #fff;
@@ -205,20 +211,35 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 }
 
 .navbar-toggler-custom {
-  margin-top: -.05rem;
+  margin-top: 1.8125rem;
   font-size: 1.55rem;
 }
 
 .navbar {
-  padding: 1.65rem 0 .8rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   font-size: .9375rem;
   font-weight: 600;
   line-height: 1.2;
 
-  @include media-breakpoint-down(sm) {
-    padding-top: 1.5625rem;
+  @include media-breakpoint-up(md) {
+    padding: 0;
   }
 }
+
+.navbar-nav .nav-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include media-breakpoint-up(md) {
+    padding: 1.9375rem 1rem;
+  }
+}
+
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.navbar-nav .nav-dropdown-search .nav-link { padding: 1.8125rem 1rem 1.9375rem; }
 
 .navbar-toggleable-custom {
   @include media-breakpoint-down(sm) {
@@ -235,20 +256,9 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 @include media-breakpoint-down(sm) {
   .navbar-nav {
-    .nav-item + .nav-item {
-      margin-left: 2rem;
-
-      @include media-breakpoint-down(sm) {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .navbar-nav {
     float: none !important;
     width: 100%;
+
     .nav-item {
       display: block;
       float: none;
@@ -257,6 +267,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
       background-color: #fff;
     }
   }
+
   .navbar-dark .navbar-nav {
     .nav-item {
       background-color: transparent;
@@ -296,8 +307,8 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 }
 
 .navbar-brand {
-  padding: 0;
-  margin: -.625rem 0 0;
+  padding: 1rem 0 1.0625rem;
+  margin: 0;
 }
 
 .icon-logo {
@@ -308,14 +319,29 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   @include media-breakpoint-down(sm) {
     color: $brand-primary;
   }
+
   @include media-breakpoint-up(md) {
-    box-shadow: 0 2px 0 rgba(66, 71, 83, .2);
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 1rem;
+      bottom: 1.375rem;
+      left: 1rem;
+      height: 2px;
+      background-color: rgba(66, 71, 83, .2);
+    }
   }
 }
 
 .navbar-dark .navbar-nav .active > .nav-link {
   @include media-breakpoint-up(md) {
-    box-shadow: 0 2px 0 rgba(255, 255, 255, .2);
+    position: relative;
+
+    &:after {
+      background-color: rgba(255, 255, 255, .2);
+    }
   }
 }
 
@@ -323,7 +349,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   width: 5px;
   height: 5px;
   padding: 0;
-  margin: .8125rem 1.5rem .75rem;
+  margin: 2.375rem .5rem;
   background: rgba(66,71,83,.2);
   border-radius: 50%;
   .navbar-dark & {
@@ -451,8 +477,8 @@ h6 {
 
   @include media-breakpoint-up(sm) {
     position: absolute;
-    top: .7rem;
-    right: 2rem;
+    top: 1.375rem;
+    right: 3.5rem;
     min-width: 22rem;
     background-color: transparent;
   }
@@ -460,16 +486,17 @@ h6 {
 
 .navbar-form .form-control {
   padding: 1rem 0 1rem 15px;
-  font-size: .9375rem;
+  font-size: 1rem; // prevents tap-zooming on mobile
   font-weight: 600;
   line-height: 1.2;
   background: transparent;
   border: 0;
+  box-shadow: none;
 
-  @include media-breakpoint-up(sm) {
-    padding: .425rem;
+  @include media-breakpoint-up(md) {
+    padding: .5625rem .625rem;
     font-size: .9375rem;
-    border-bottom: 2px solid rgba(66, 71, 83, .2);
+    box-shadow: inset 0 -2px 0 rgba(66, 71, 83, .2);
     border-radius: 0;
 
     &::-webkit-input-placeholder {
@@ -492,13 +519,17 @@ h6 {
 
   &:focus {
     box-shadow: none;
+
+    @include media-breakpoint-up(md) {
+      box-shadow: inset 0 -2px 0 rgba(66, 71, 83, .2);
+    }
   }
 }
 
 .bg-inverse .navbar-form .form-control {
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     color: #fff;
-    border-bottom: 2px solid rgba(255,255,255,.2);
+    box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .2);
 
     &::-webkit-input-placeholder {
       color: #fff;
@@ -517,7 +548,6 @@ h6 {
 
 .icon-search {
   display: block;
-  margin-top: .5rem;
   font-size: 1.25rem;
 }
 
@@ -545,19 +575,13 @@ h6 {
 
 .nav-dropdown-search {
   @include media-breakpoint-up(sm) {
-    margin-top: -.7rem;
+    margin-top: 0;
   }
 }
 
-.nav-dropdown-user {
-  @include media-breakpoint-up(sm) {
-    margin-top: -.8rem;
-  }
-}
+.navbar-nav .nav-dropdown-user { padding: 1.25rem 0 1.3125rem .5rem; }
 
-.dropdown-menu-user {
-  top: 138%;
-}
+.dropdown-menu-user { top: 104%; }
 
 // Scroll Nav
 @include media-breakpoint-up(md) {
@@ -744,11 +768,15 @@ h2 {
 }
 
 .btn {
-  padding: $btn-padding-y ($btn-padding-x - 1.25rem) ($btn-padding-y - .1rem);
+  padding: $btn-padding-y ($btn-padding-x - 2.25rem) ($btn-padding-y - .1rem);
   font-size: .8125rem;
   line-height: 1.1538;
   text-transform: uppercase;
   letter-spacing: .1rem;
+  border-width: 1px;
+  @include media-breakpoint-up(lg) {
+    padding: $btn-padding-y ($btn-padding-x - 1.25rem) ($btn-padding-y - .1rem);
+  }
   > i,
   > span {
     margin-right: .3rem;
@@ -1290,6 +1318,9 @@ figure {
 }
 
 .form-control {
+  -webkit-appearance: none;
+  border-width: 1px;
+
   &:focus {
     box-shadow: 0 0 4px rgba(135,121,189,.53);
     & + span {
