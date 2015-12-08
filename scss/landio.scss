@@ -230,6 +230,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 .navbar-nav .nav-link {
   padding-top: 10px;
   padding-bottom: 10px;
+
   @include media-breakpoint-up(md) {
     padding: 1.9375rem 1rem;
   }
@@ -239,7 +240,9 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   margin-left: 0;
 }
 
-.navbar-nav .nav-dropdown-search .nav-link { padding: 1.8125rem 1rem 1.9375rem; }
+.navbar-nav .nav-dropdown-search .nav-link {
+  padding: 1.8125rem 1rem 1.9375rem;
+}
 
 .navbar-toggleable-custom {
   @include media-breakpoint-down(sm) {
@@ -319,17 +322,16 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   @include media-breakpoint-down(sm) {
     color: $brand-primary;
   }
-
   @include media-breakpoint-up(md) {
     position: relative;
 
     &:after {
-      content: "";
       position: absolute;
       right: 1rem;
       bottom: 1.375rem;
       left: 1rem;
       height: 2px;
+      content: '';
       background-color: rgba(66, 71, 83, .2);
     }
   }
@@ -496,8 +498,8 @@ h6 {
   @include media-breakpoint-up(md) {
     padding: .5625rem .625rem;
     font-size: .9375rem;
-    box-shadow: inset 0 -2px 0 rgba(66, 71, 83, .2);
     border-radius: 0;
+    box-shadow: inset 0 -2px 0 rgba(66, 71, 83, .2);
 
     &::-webkit-input-placeholder {
       color: $gray;
@@ -579,9 +581,13 @@ h6 {
   }
 }
 
-.navbar-nav .nav-dropdown-user { padding: 1.25rem 0 1.3125rem .5rem; }
+.navbar-nav .nav-dropdown-user {
+  padding: 1.25rem 0 1.3125rem .5rem;
+}
 
-.dropdown-menu-user { top: 104%; }
+.dropdown-menu-user {
+  top: 104%;
+}
 
 // Scroll Nav
 @include media-breakpoint-up(md) {
@@ -677,7 +683,7 @@ $custom-min-height: 37.5em; // 600
           left: 8px;
           width: 1px;
           height: 20px;
-          content: "";
+          content: '';
           background-color: rgba(255, 255, 255, .25);
         }
       }
@@ -774,6 +780,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: .1rem;
   border-width: 1px;
+
   @include media-breakpoint-up(lg) {
     padding: $btn-padding-y ($btn-padding-x - 1.25rem) ($btn-padding-y - .1rem);
   }
