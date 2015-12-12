@@ -81,9 +81,11 @@
 @import 'bootstrap/carousel';
 
 // Utility classes
-@import 'bootstrap/utilities';
-@import 'bootstrap/utilities-spacing';
-@import 'bootstrap/utilities-responsive';
+@import "bootstrap/utilities";
+@import "bootstrap/utilities-background";
+@import "bootstrap/utilities-spacing";
+@import "bootstrap/utilities-responsive";
+
 
 // Video JS
 @import 'plugins/videojs-landio-skin';
@@ -131,6 +133,8 @@
 $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 .bg-inverse {
+  color: #fff;
+
   a,
   a:focus,
   a:hover {
@@ -179,9 +183,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   }
 }
 
-.textselect-off {
-  user-select: none;
-}
+.textselect-off { user-select: none; }
 
 
 //
@@ -223,7 +225,8 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   line-height: 1.2;
 
   @include media-breakpoint-up(md) {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -236,6 +239,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   }
 }
 
+.nav-inline .nav-item + .nav-item,
 .navbar-nav .nav-item + .nav-item {
   margin-left: 0;
 }
@@ -272,9 +276,11 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   }
 
   .navbar-dark .navbar-nav {
+
     .nav-item {
       background-color: transparent;
     }
+
     .nav-link {
       display: block;
       color: darken(#fff, 20%);
@@ -283,14 +289,18 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
         color: #fff;
       }
     }
+
     .active .nav-link {
       color: #fff;
     }
   }
+
   .bg-inverse-custom .navbar-nav {
+
     .nav-item {
       background-color: #fff;
     }
+
     .nav-link {
       padding: 1rem;
       color: lighten($gray, 20%);
@@ -299,29 +309,28 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
         color: $gray;
       }
     }
+
     .active > .nav-link {
       color: $brand-primary !important;
     }
   }
 }
 
-.navbar-fixed-top {
-  position: absolute;
-}
+.navbar-fixed-top { position: absolute; }
 
 .navbar-brand {
   padding: 1rem 0 1.0625rem;
   margin: 0;
 }
 
-.icon-logo {
-  font-size: 45px;
-}
+.icon-logo { font-size: 45px; }
 
 .navbar-nav .active > .nav-link {
+
   @include media-breakpoint-down(sm) {
     color: $brand-primary;
   }
+
   @include media-breakpoint-up(md) {
     position: relative;
 
@@ -338,6 +347,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 }
 
 .navbar-dark .navbar-nav .active > .nav-link {
+
   @include media-breakpoint-up(md) {
     position: relative;
 
@@ -354,6 +364,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   margin: 2.375rem .5rem;
   background: rgba(66,71,83,.2);
   border-radius: 50%;
+
   .navbar-dark & {
     background: rgba(255, 255, 255, .2);
   }
@@ -368,12 +379,14 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   margin-top: 0;
   border: 0 none;
   box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+
   .media {
     padding-bottom: 1.25rem;
     margin-bottom: 1.25rem;
     color: $gray;
     border-bottom: 1px solid #e9eaec;
   }
+
   .text-muted {
     color: rgba(66,71,83,.4) !important;
   }
@@ -394,6 +407,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 }
 
 .open {
+
   > .dropdown-menu-animated {
     visibility: visible;
     opacity: 1;
@@ -407,10 +421,12 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   overflow-y: hidden;
   background-color: #fff;
   border: 0 none;
+
   .media {
     margin-bottom: 1.5rem;
     color: $gray;
   }
+
   .text-muted {
     color: rgba(66,71,83,.4) !important;
   }
@@ -421,9 +437,9 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   font-size: .8125rem;
   font-weight: 600;
   line-height: 1.1538;
-  & + & {
-    padding-top: .625rem;
-  }
+
+  & + & { padding-top: .625rem; }
+
   &:hover,
   &:focus {
     background-color: transparent;
@@ -432,6 +448,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 .bg-inverse .dropdown-item {
   color: $gray;
+
   &:focus,
   &:hover {
     color: $brand-primary;
@@ -460,6 +477,7 @@ h6 {
   text-align: center;
   border-radius: 50%;
   opacity: .8;
+
   &:focus,
   &:hover {
     color: #fff;
@@ -501,23 +519,13 @@ h6 {
     border-radius: 0;
     box-shadow: inset 0 -2px 0 rgba(66, 71, 83, .2);
 
-    &::-webkit-input-placeholder {
-      color: $gray;
-    }
-    &:-moz-placeholder {
-      color: $gray;
-    }
-    &::-moz-placeholder {
-      color: $gray;
-    }
-    &:-ms-input-placeholder {
-      color: $gray;
-    }
+    &::-webkit-input-placeholder { color: $gray; }
+    &:-moz-placeholder { color: $gray; }
+    &::-moz-placeholder { color: $gray; }
+    &:-ms-input-placeholder { color: $gray; }
   }
 
-  &:hover {
-    cursor: pointer;
-  }
+  &:hover { cursor: pointer; }
 
   &:focus {
     box-shadow: none;
@@ -529,22 +537,16 @@ h6 {
 }
 
 .bg-inverse .navbar-form .form-control {
+
   @include media-breakpoint-up(md) {
+
     color: #fff;
     box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .2);
 
-    &::-webkit-input-placeholder {
-      color: #fff;
-    }
-    &:-moz-placeholder {
-      color: #fff;
-    }
-    &::-moz-placeholder {
-      color: #fff;
-    }
-    &:-ms-input-placeholder {
-      color: #fff;
-    }
+    &::-webkit-input-placeholder { color: #fff; }
+    &:-moz-placeholder { color: #fff; }
+    &::-moz-placeholder { color: #fff; }
+    &:-ms-input-placeholder { color: #fff; }
   }
 }
 
@@ -554,19 +556,19 @@ h6 {
 }
 
 .dropdown-toggle {
-  &:hover {
-    cursor: pointer;
-  }
+
+  &:hover { cursor: pointer; }
+
   &:after {
     display: none; // no BS caret
   }
+
   img {
     margin-right: .5rem;
     box-shadow: 0 0 0 4px $gray;
   }
-  span {
-    vertical-align: middle;
-  }
+
+  span { vertical-align: middle; }
 }
 
 .bg-inverse .dropdown-toggle {
@@ -585,24 +587,25 @@ h6 {
   padding: 1.25rem 0 1.3125rem .5rem;
 }
 
-.dropdown-menu-user {
-  top: 104%;
-}
+.dropdown-menu-user { top: 104%; }
 
 // Scroll Nav
 @include media-breakpoint-up(md) {
+
   .scroll-nav {
     position: fixed;
     top: 50%;
     right: 5%;
     z-index: 2;
     transform: translateY(-50%);
+
     a {
       width: 17px;
       height: 17px;
       color: #fff;
       background-color: #fff;
       border-radius: 50%;
+
       &.active {
         border: 4px solid rgba(255,255,255,.25);
       }
@@ -636,13 +639,14 @@ $custom-min-height: 37.5em; // 600
   @include media-breakpoint-down(sm) {
     padding-top: 6.25rem;
   }
-  .btn {
-    padding: 1.2rem 2rem;
-  }
+
+  .btn { padding: 1.2rem 2rem; }
+
   a.jumbolink {
     opacity: .6;
     transition: opacity .175s;
   }
+
   a.jumbolink:hover,
   a.jumbolink:focus {
     opacity: 1;
@@ -659,6 +663,7 @@ $custom-min-height: 37.5em; // 600
 
 .carousel-header {
   .carousel-indicators {
+
     @include media-breakpoint-up(md) {
       top: 50%;
       right: 30px;
@@ -689,15 +694,13 @@ $custom-min-height: 37.5em; // 600
       }
 
       .active {
-        &:before {
-          bottom: 21px;
-        }
 
-        & + li:before {
-          height: 16px;
-        }
+        &:before { bottom: 21px; }
+
+        & + li:before { height: 16px; }
       }
     }
+
     li {
       width: 17px;
       height: 17px;
@@ -754,6 +757,7 @@ $custom-min-height: 37.5em; // 600
     width: 100%;
     height: 100%;
     padding: 0;
+
     > div {
       display: table-cell;
       vertical-align: middle;
@@ -768,6 +772,7 @@ h2 {
   @include media-breakpoint-down(sm) {
     font-size: 1.35rem;
   }
+
   em {
     font-weight: 500;
   }
@@ -784,6 +789,7 @@ h2 {
   @include media-breakpoint-up(lg) {
     padding: $btn-padding-y ($btn-padding-x - 1.25rem) ($btn-padding-y - .1rem);
   }
+
   > i,
   > span {
     margin-right: .3rem;
@@ -802,37 +808,39 @@ h2 {
 }
 
 .social-share {
+  margin-bottom: 1rem;
   font-family: $font-family-sans-serif-custom;
   font-size: .8125rem;
   font-weight: 700;
   line-height: 1.23;
   text-align: center;
+
   @media (min-width: $custom-min-width) and (min-height: $custom-min-height) {
     position: absolute;
     right: 0;
     bottom: 35px;
     left: 0;
   }
+
   a {
     color: #fff;
+
     span {
       margin-right: .3rem;
       font-size: .9375rem;
       color: rgba(255, 255, 255, .5);
     }
-    .icon-facebook {
-      margin-right: .1rem;
-    }
+
+    .icon-facebook { margin-right: .1rem; }
+
     &:focus,
     &:hover {
-      span {
-        color: #fff;
-      }
+      span { color: #fff; }
     }
   }
-  li {
-    padding: .1875rem .7rem;
-  }
+
+  li { padding: .1875rem .7rem; }
+
   li + li {
     border-left: 1px solid rgba(255, 255, 255, .25);
   }
@@ -848,8 +856,10 @@ h3 {
   font-weight: 400;
   line-height: 1.178;
 }
+
 .section-intro {
   overflow: hidden;
+
   .lead {
     margin-bottom: 2.5rem;
   }
@@ -871,6 +881,7 @@ h3 {
       margin-bottom: 0;
     }
   }
+
   .card-block {
     padding: 0;
 
@@ -892,6 +903,7 @@ h3 {
     border: 5px solid #f5f5f5;
     border-radius: 50%;
   }
+
   .icon-heart {
     font-size: 1.85rem;
     line-height: 2.75;
@@ -913,6 +925,7 @@ h3 {
 
   @include media-breakpoint-up(sm) {
     margin-bottom: 1.5625rem;
+
     &:after {
       display: block;
       width: 80%;
@@ -924,22 +937,16 @@ h3 {
   }
 }
 
-.card-text {
-  font-weight: 300;
-}
+.card-text { font-weight: 300; }
 
 
 //
 // =Video
 // --------------------------------------------------
 
-figure {
-  position: relative;
-}
+figure { position: relative; }
 
-.img-responsive-custom {
-  width: 100%;
-}
+.img-responsive-custom { width: 100%; }
 
 .modal-video {
   width: auto;
@@ -948,6 +955,7 @@ figure {
   @include media-breakpoint-up(md) {
     margin: .9375rem 1.875rem;
   }
+
   .modal-content {
     border: 0 none;
   }
@@ -956,6 +964,7 @@ figure {
 .has-light-mask {
   position: relative;
   z-index: 1;
+
   &:after {
     position: absolute;
     top: 0;
@@ -968,6 +977,7 @@ figure {
     opacity: .6;
     transition: opacity .3s;
   }
+
   &:hover:after {
     opacity: 0;
   }
@@ -975,10 +985,12 @@ figure {
 
 .image-effect {
   overflow: hidden;
+
   img {
     transition: transform .5s cubic-bezier(.7,0,.3,1);
     transform: scale3d(1.8, 1.8, 1);
   }
+
   &:hover img {
     transform: scale3d(1, 1, 1);
   }
@@ -991,9 +1003,9 @@ figure {
   z-index: 2;
   color: #fff;
   transform: translate(-50%, -50%);
-  span {
-    font-size: 3.125rem;
-  }
+
+  span { font-size: 3.125rem; }
+
   &:focus,
   &:hover {
     color: rgba(255,255,255,.5);
@@ -1011,6 +1023,7 @@ figure {
   font-weight: 300;
   background-color: #fcfefe;
   border: 1px solid #eceff3;
+
   .card-block {
     padding: 1rem;
 
@@ -1018,6 +1031,7 @@ figure {
       padding-top: 1.5625rem;
     }
   }
+
   .card-header {
     padding-top: 1.1rem;
     padding-bottom: 1.1rem;
@@ -1026,22 +1040,26 @@ figure {
     line-height: 1.1538;
     background-color: #eceff3;
     border-bottom: 0 none;
+
     &:first-child {
       border-radius: 0;
     }
   }
+
   .card-title {
     margin-bottom: .625rem;
     font-size: 1rem;
     font-weight: 300;
     line-height: 2;
   }
+
   h4 small {
     font-size: .8125rem;
     font-weight: 600;
     line-height: 1.1538;
     color: #aeb0b5;
   }
+
   .list-group {
     margin-bottom: 1rem;
 
@@ -1049,14 +1067,17 @@ figure {
       margin-bottom: 4.0625rem;
     }
   }
+
   .list-group-item {
     padding: .45rem 1rem;
     background-color: transparent;
     border-color: #ededef;
   }
+
   .list-group-item:first-child {
     border-top-color: transparent;
   }
+
   .list-group-item:last-child {
     border-bottom-color: transparent;
   }
@@ -1089,6 +1110,7 @@ figure {
     margin-right: -30px;
     margin-left: -30px;
   }
+
   .card-header {
     color: #fff;
     background-color: $brand-primary;
@@ -1108,6 +1130,7 @@ figure {
 .section-testimonials {
   background: #663fb5 url(../img/bg-testimonials.jpg) no-repeat center bottom;
   background-size: cover;
+
   .blockquote {
     margin: 0 auto 2rem;
     border-left: 0 none;
@@ -1116,29 +1139,36 @@ figure {
       max-width: 60rem;
       margin-bottom: 4.5rem;
     }
+
     > img {
       margin-bottom: 1.5625rem;
       border: 4px solid #fff;
     }
+
     p {
       margin-bottom: .9375rem;
       font-weight: 400;
       line-height: 1.464;
+
       &:before {
         content: '\201c';
       }
+
       &:after {
         content: '\201d';
       }
     }
+
     footer {
       font-size: 1rem;
       font-weight: 600;
       line-height: 1.1875;
       color: #fff;
+
       &:before {
         content: '';
       }
+
       &:after {
         display: block;
         width: 2.5rem;
@@ -1149,12 +1179,14 @@ figure {
       }
     }
   }
+
   .carousel-indicators {
     position: inherit;
     bottom: auto;
     left: auto;
     width: auto;
     margin: 0 0 2.1875rem;
+
     img {
       width: 45px;
       height: 45px;
@@ -1162,6 +1194,7 @@ figure {
       border: 3px solid #fff;
       transition: all .1s ease-in-out;
     }
+
     li {
       width: 60px;
       height: 60px;
@@ -1171,13 +1204,14 @@ figure {
       border-radius: 0;
       opacity: .5;
       transition: opacity .2s;
-      &:hover {
-        opacity: .9;
-      }
+
+      &:hover { opacity: .9; }
+
       &.active {
         margin: 0;
         background-color: transparent;
         opacity: 1;
+
         img {
           width: 56px;
           height: 56px;
@@ -1196,6 +1230,7 @@ figure {
 
 .separator-x {
   position: relative;
+
   &:before {
     position: absolute;
     top: 0;
@@ -1218,10 +1253,12 @@ figure {
     .p-r-0 {
       padding-right: ($grid-gutter-width / 2) !important;
     }
+
     .p-l-0 {
       padding-left: ($grid-gutter-width / 2) !important;
     }
   }
+
   article {
     max-width: 22.5rem;
     padding: 1rem;
@@ -1229,22 +1266,25 @@ figure {
     @include media-breakpoint-up(lg) {
       padding: 4rem 0;
     }
+
     @include media-breakpoint-up(xl) {
       padding: 6.5rem 0;
     }
   }
+
   .icon-arrow-right {
     display: inline-block;
     margin-left: .25rem;
     font-size: .875rem;
     transition: transform .3s;
   }
+
   h5 {
     margin-bottom: 1rem;
     line-height: 1.777;
-    a {
-      display: block;
-    }
+
+    a { display: block; }
+
     a:hover .icon-arrow-right {
       transform: translate3d(15px, 0, 0);
     }
@@ -1258,6 +1298,7 @@ figure {
   font-weight: 600;
   line-height: 1.1538;
   border-radius: 2.5rem;
+
   span {
     margin-right: .15rem;
     font-size: 16px;
@@ -1284,6 +1325,7 @@ figure {
 
 .has-icon-left {
   position: relative;
+
   &:before {
     position: absolute;
     top: 14px;
@@ -1293,6 +1335,7 @@ figure {
     content: '';
     background-color: #ededef;
   }
+
   &:after {
     position: absolute;
     top: 14px;
@@ -1304,9 +1347,8 @@ figure {
     background-repeat: no-repeat;
     background-position: 5% center;
   }
-  .form-control {
-    padding-left: 60px;
-  }
+
+  .form-control { padding-left: 60px; }
 }
 
 .form-control-name:after {
@@ -1330,15 +1372,14 @@ figure {
 
   &:focus {
     box-shadow: 0 0 4px rgba(135,121,189,.53);
+
     & + span {
       color: $brand-primary;
     }
   }
 }
 
-.form-control-lg {
-  font-size: 1rem;
-}
+.form-control-lg { font-size: 1rem; }
 
 .btn-block {
   padding-right: 0;
@@ -1356,9 +1397,11 @@ figure {
   @include media-breakpoint-up(md) {
     text-align: left;
   }
+
   a {
     color: rgba(187,190,196,.8);
     text-decoration: underline;
+
     &:focus,
     &:hover {
       color: rgba(187,190,196,1);
@@ -1397,25 +1440,31 @@ figure {
   @include media-breakpoint-up(md) {
     padding-bottom: 4.4rem;
   }
+
   small {
     font-size: .8125rem;
     line-height: 1.538;
   }
+
   .media {
     @include media-breakpoint-down(sm) {
       margin-bottom: 2rem;
       text-align: center;
     }
+
     @include media-breakpoint-up(md) {
       padding-top: 1.75rem;
     }
+
     @include media-breakpoint-up(lg) {
       padding-top: 0;
     }
+
     @include media-breakpoint-up(xl) {
       padding-top: .55rem;
     }
   }
+
   .media-left {
     padding-right: 1.75rem;
 
@@ -1425,7 +1474,8 @@ figure {
       margin: 0 0 1rem;
     }
   }
-  .list-inline {
+
+  .nav-inline {
     font-size: .9375rem;
     font-weight: 600;
     line-height: 1.2;
@@ -1434,9 +1484,11 @@ figure {
     @include media-breakpoint-up(md) {
       text-align: right;
     }
+
     @include media-breakpoint-up(xl) {
       padding-top: 1.65rem;
     }
+
     > li {
       padding-right: 1rem;
       padding-left: 1rem;
@@ -1445,17 +1497,21 @@ figure {
         display: block;
         text-align: center;
       }
+
       @include media-breakpoint-up(xl) {
         &:first-child {
           padding-left: 0;
         }
+
         &:last-child {
           padding-right: 0;
         }
       }
+
       &.active a {
         box-shadow: 0 2px 0 rgba(66, 71, 83, .2);
       }
+
       a {
         display: inline-block;
         padding-top: .5rem;
@@ -1469,6 +1525,7 @@ figure {
       }
     }
   }
+
   .icon-caret-up {
     margin-left: .25rem;
     font-size: 20px;
@@ -1483,14 +1540,17 @@ figure {
 
 .section-footer.bg-inverse {
   color: #fff;
-  .list-inline > li {
+
+  .nav-inline > li {
     &.active a {
       box-shadow: 0 2px 0 rgba(255, 255, 255, .2);
+
       &:focus,
       &:hover {
         color: #fff;
       }
     }
+
     a {
       &:focus,
       &:hover {
@@ -1523,23 +1583,27 @@ figure {
       background-color: #e9eaec;
     }
   }
+
   .card-block {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
+
     &:first-child {
       border-radius: .25rem .25rem 0 0;
     }
+
     &:last-child {
       border-radius: 0 0 .25rem .25rem;
     }
   }
+
   img {
     margin-bottom: 1rem;
     box-shadow: 0 0 0 4px #fff;
   }
-  .card-title {
-    font-size: 1.125rem;
-  }
+
+  .card-title { font-size: 1.125rem; }
+
   .card-subtitle {
     margin-bottom: 0;
     color: #fff;
@@ -1547,6 +1611,7 @@ figure {
       display: none;
     }
   }
+
   .btn {
     position: absolute;
     top: 1rem;
@@ -1564,6 +1629,7 @@ figure {
       border-color: transparent;
     }
   }
+
   h4 {
     font-family: $font-family-sans-serif-custom;
 
@@ -1571,15 +1637,15 @@ figure {
       margin-bottom: 0;
     }
   }
+
   small {
     display: block;
     font-family: $font-family-sans-serif;
     font-size: .8125rem;
     color: rgba(66,71,83,.4);
   }
-  .card-stat {
-    position: relative;
-  }
+
+  .card-stat { position: relative; }
 }
 
 
@@ -1592,18 +1658,10 @@ $twitter: #55acee;
 $google: #dc4e41;
 $linkedin: #0077b5;
 
-.bg-facebook {
-  background-color: $facebook;
-}
-.bg-twitter {
-  background-color: $twitter;
-}
-.bg-google {
-  background-color: $google;
-}
-.bg-linkedin {
-  background-color: $linkedin;
-}
+.bg-facebook { background-color: $facebook; }
+.bg-twitter { background-color: $twitter; }
+.bg-google { background-color: $google; }
+.bg-linkedin { background-color: $linkedin; }
 
 .btn-social {
   color: #fff;
@@ -1613,9 +1671,9 @@ $linkedin: #0077b5;
     color: #fff;
     background-color: $gray;
   }
-  span:before {
-    color: rgba(255,255,255,.5);
-  }
+
+  span:before { color: rgba(255,255,255,.5); }
+
   > .icon-linkedin {
     position: relative;
     top: -.2rem;
@@ -1626,14 +1684,18 @@ $linkedin: #0077b5;
 .btn-social-icon {
   padding: 1.4rem;
   background-color: #fff;
+
   > span {
     margin: 0;
+
     &:before {
       color: rgba(66,78,83,.5);
     }
   }
+
   &:hover,
   &:focus {
+
     > span:before {
       color: #fff;
     }
@@ -1675,6 +1737,7 @@ $linkedin: #0077b5;
 
 .card-chart {
   background-color: #fff;
+
   .list-group-item {
     padding-top: 1.035rem;
     padding-bottom: 1.0625rem;
@@ -1687,9 +1750,9 @@ $linkedin: #0077b5;
     border: 0 none;
     border-top: 1px solid #e9eaec;
     border-radius: 0;
-    &:first-child {
-      border-top-color: transparent;
-    }
+
+    &:first-child { border-top-color: transparent; }
+
     .label {
       padding: 0;
       margin: 0;
@@ -1699,9 +1762,8 @@ $linkedin: #0077b5;
       line-height: .7222;
       color: rgba(65, 70, 83, .8);
     }
-    &.complete {
-      background-color: $gray-lightest;
-    }
+
+    &.complete { background-color: $gray-lightest; }
   }
 }
 
@@ -1714,23 +1776,18 @@ $linkedin: #0077b5;
   border-radius: 50%;
 }
 
-.status-completed {
-  background-color: #5e98e3;
-}
+.status-completed { background-color: #5e98e3; }
 
-.status-backlog {
-  background-color: #59d0bd;
-}
+.status-backlog { background-color: #59d0bd; }
 
-.status-noticket {
-  background-color: #e8e9ec;
-}
+.status-noticket { background-color: #e8e9ec; }
 
 #chart-holder {
   position: relative;
   width: 80%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+
   &:before {
     position: absolute;
     top: 50%;
@@ -1742,7 +1799,6 @@ $linkedin: #0077b5;
     content: attr(data-active); /* Completed + In backlog */
     transform: translate(-50%,-50%);
   }
-  canvas {
-    width: 170px;
-  }
+
+  canvas { width: 170px; }
 }

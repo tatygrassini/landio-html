@@ -95,7 +95,7 @@
     // hide first nav items when search is opened
     $('.nav-dropdown-search').on('show.bs.dropdown', function () {
       $(this).siblings().not('.navbar-nav .dropdown').addClass('sr-only');
-    });
+    })
     // cursor focus
     $('.nav-dropdown-search').on('shown.bs.dropdown', function () {
       $('.navbar-search-input').focus();
@@ -129,7 +129,7 @@
   }
 
   function scrollToTop() {
-    $('.scroll-top').on( 'click', function(){
+    $('.scroll-top').on( 'click', function() {
       $('html, body').animate({
         scrollTop: 0
       }, 1000);
@@ -200,7 +200,6 @@
       });
 
     });
-
   }
 
   function init() {
