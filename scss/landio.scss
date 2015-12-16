@@ -740,7 +740,7 @@ $custom-min-height: 37.5em; // 600
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
   h1,
   .h1 {
     margin-bottom: 1rem;
@@ -769,8 +769,12 @@ h2 {
   font-weight: 300;
   line-height: 1.5;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     font-size: 1.35rem;
+  }
+
+  @media (max-height: $custom-min-height - 1) {
+    display: none;
   }
 
   em {
