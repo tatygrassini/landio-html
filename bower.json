@@ -5,14 +5,24 @@
     "Taty Grassini"
   ],
   "description": "Landio is a responsive HTML template, built on top of Bootstrap 4 and based on the Land.io Sketch design by Peter Finlan. This template and the UI kit were coded by Taty Grassini.",
-  "main": "",
-  "moduleType": [],
-  "keywords": [
-    "Land.io",
-    "UI-kit",
-    "design"
+  "main": [
+    "less/landio.scss"
+    "js/landio.min.js"
   ],
   "license": "Codrops custom Licence",
+  "moduleType": "globals",
+  "keywords": [
+    "Land.io",
+    "landio",
+    "ui-kit",
+    "sketch",
+    "css",
+    "js",
+    "scss",
+    "mobile-first",
+    "responsive",
+    "front-end"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",

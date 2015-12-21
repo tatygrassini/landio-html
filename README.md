@@ -4,11 +4,15 @@ Landio is a responsive HTML template, built on top of [Bootstrap 4](http://v4-al
 
 [Read more about it on Codrops](http://tympanus.net/codrops/?p=25217)
 
-[Demo Template](http://tympanus.net/Freebies/Landio/)
-
-[Demo UI Kit](http://tympanus.net/Freebies/Landio/ui-elements.html)
-
 ![Land.io Featured Image](http://codropspz.tympanus.netdna-cdn.com/codrops/wp-content/uploads/2015/10/Landio800x600.jpg)
+
+## Demos
+
+[Template Demo](http://tatygrassini.github.io/landio-html/)
+
+[Slider Demo](http://tatygrassini.github.io/landio-html/index-carousel.html)
+
+[UI Kit Demo](http://tatygrassini.github.io/landio-html/ui-elements.html)
 
 ## License
 
