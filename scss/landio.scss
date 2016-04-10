@@ -640,7 +640,7 @@ $custom-min-height: 37.5em; // 600
     padding-top: 6.25rem;
   }
 
-  .btn { padding: 1.2rem 2rem; }
+  .btn { padding: 1.05rem 2rem 1.35rem; }
 
   a.jumbolink {
     opacity: .6;
@@ -799,7 +799,7 @@ h2 {
     margin-right: .3rem;
     font-size: 1.28rem;
     line-height: 1;
-    vertical-align: -20%;
+    vertical-align: text-bottom;
   }
 }
 
