@@ -91,7 +91,7 @@
 @import 'plugins/videojs-landio-skin';
 
 // Animate CSS (none for mobile)
-@include media-breakpoint-up(md) {
+@media (min-width: 768px) {
   @import 'plugins/animate';
 }
 
@@ -738,6 +738,8 @@ $custom-min-height: 37.5em; // 600
       transform: translateY(-50%);
     }
   }
+
+  .btn { padding: 1.05rem 2rem 1.35rem; }
 }
 
 @include media-breakpoint-down(md) {
