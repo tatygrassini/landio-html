@@ -2,13 +2,6 @@
 // Contextual backgrounds
 //
 
-// Inverse
-// TODO: redo this as a proper class
-.bg-inverse {
-  color: $gray-lighter;
-  background-color: $gray-dark;
-}
-
 .bg-faded {
   background-color: $gray-lightest;
 }
@@ -22,3 +15,5 @@
 @include bg-variant('.bg-warning', $brand-warning);
 
 @include bg-variant('.bg-danger', $brand-danger);
+
+@include bg-variant('.bg-inverse', $brand-inverse);

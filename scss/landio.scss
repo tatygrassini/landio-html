@@ -36,7 +36,8 @@
 
 // Core variables and mixins
 // @import "bootstrap/variables";
-@import 'bootstrap/custom-variables';
+@import 'bootstrap/custom';
+@import "bootstrap/variables";
 @import 'bootstrap/mixins';
 
 // Reset and dependencies
@@ -64,8 +65,7 @@
 @import 'bootstrap/card';
 // @import "bootstrap/breadcrumb";
 // @import "bootstrap/pagination";
-// @import "bootstrap/pager";
-@import 'bootstrap/labels';
+@import "bootstrap/tags";
 @import 'bootstrap/jumbotron';
 // @import "bootstrap/alert";
 // @import "bootstrap/progress";
@@ -82,9 +82,6 @@
 
 // Utility classes
 @import "bootstrap/utilities";
-@import "bootstrap/utilities-background";
-@import "bootstrap/utilities-spacing";
-@import "bootstrap/utilities-responsive";
 
 
 // Video JS
@@ -144,7 +141,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 .bg-inverse-custom {
   margin-top: 1.1875rem;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .bg-white {
@@ -1297,7 +1294,7 @@ figure { position: relative; }
   }
 }
 
-.label {
+.tag {
   padding: .35em .85em;
   margin-bottom: .5rem;
   font-size: .8125rem;
@@ -1312,7 +1309,7 @@ figure { position: relative; }
   }
 }
 
-.label-default {
+.tag-default {
   padding-right: 0;
   padding-left: 0;
   margin-right: .5rem;
@@ -1385,7 +1382,10 @@ figure { position: relative; }
   }
 }
 
-.form-control-lg { font-size: 1rem; }
+.form-control-lg {
+  font-size: 1rem;
+  line-height: 2;
+}
 
 .btn-block {
   padding-right: 0;
@@ -1400,8 +1400,18 @@ figure { position: relative; }
   color: rgba(187,190,196,.8);
   text-align: center;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @include media-breakpoint-up(md) {
     text-align: left;
+  }
+
+  > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
   }
 
   a {
@@ -1416,7 +1426,7 @@ figure { position: relative; }
 }
 
 .c-indicator {
-  position: inherit;
+  position: relative;
   top: 2px;
   display: inline-block;
   width: 20px;
@@ -1424,15 +1434,26 @@ figure { position: relative; }
   margin-right: .3rem;
 }
 
+
+
+
 .c-checkbox .c-indicator {
   background-color: #fff;
   border: 1px solid $brand-primary;
   border-radius: 0;
 }
 
+.c-checkbox input:checked ~ .c-indicator {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 65%;
+}
+
 .c-input > input:checked ~ .c-indicator {
   background-color: $brand-primary;
 }
+
 
 
 //
