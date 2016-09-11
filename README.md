@@ -1,5 +1,3 @@
-[![GitHub version](https://badge.fury.io/gh/boennemann%2Fbadges.svg)](http://badge.fury.io/gh/boennemann%2Fbadges)
-
 # "Land.io" UI Kit + Landing Page (HTML)
 
 Landio is a responsive HTML template, built on top of [Bootstrap 4](http://v4-alpha.getbootstrap.com/) and based on the [Land.io Sketch design](http://tympanus.net/codrops/2015/09/16/freebie-land-io-ui-kit-landing-page-design-sketch/) by [Peter Finlan](http://peterfinlan.com/). This template and the UI kit were coded by [Taty Grassini](http://tatygrassini.github.io/).
