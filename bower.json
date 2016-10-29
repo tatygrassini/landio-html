@@ -19,7 +19,8 @@
     "scss",
     "mobile-first",
     "responsive",
-    "front-end"
+    "front-end",
+    "codekit"
   ],
   "ignore": [
     "**/.*",
