@@ -7,8 +7,14 @@
 		"uuidString": "5CA8D96D-2BAB-413A-9110-7581D8491A56"
 		}
 	],
-"creatorBuild": "25378",
+"creatorBuild": "25390",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -56,18 +62,18 @@
 	"\/source\/js\/bootstrap\/alert.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/js\/bootstrap\/alert.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
 	"\/source\/js\/bootstrap\/button.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/js\/bootstrap\/button.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
@@ -110,36 +116,36 @@
 	"\/source\/js\/bootstrap\/popover.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/js\/bootstrap\/popover.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
 	"\/source\/js\/bootstrap\/scrollspy.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/js\/bootstrap\/scrollspy.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
 	"\/source\/js\/bootstrap\/tab.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/js\/bootstrap\/tab.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
 	"\/source\/js\/bootstrap\/tooltip.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/js\/bootstrap\/tooltip.min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 0,
 		"tS": 0
 		},
@@ -278,6 +284,14 @@
 		"oAP": "\/build\/_section-video.html",
 		"oF": 0
 		},
+	"\/source\/scss\/.csscomb.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/scss\/.csscomb-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/source\/scss\/_icomoon.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -290,6 +304,12 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/.scss-lint.yml": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/.scss-lint.yml",
+		"oF": 1
 		},
 	"\/source\/scss\/bootstrap\/_alert.scss": {
 		"aP": 0,
@@ -779,9 +799,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/scss\/css\/bootstrap-flex.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
 		},
@@ -792,9 +812,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/scss\/css\/bootstrap-grid.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
 		},
@@ -805,9 +825,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/scss\/css\/bootstrap-reboot.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
 		},
@@ -1345,7 +1365,7 @@
 		"uL": 1
 		},
 	"\/source\/scss\/landio.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 3,
 		"dS": 0,
@@ -1396,9 +1416,10 @@
 	},
 "projectAttributes": {
 	"creationDate": 499455185,
-	"displayValue": "landio",
+	"displayValue": "landio-html",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_teal"
+	"iconImageName": "brackets_teal",
+	"lastBuiltDate": 499702558
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
