@@ -47,6 +47,226 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/source\/img\/favicon\/android-chrome-144x144.png": {
+		"ft": 32768,
+		"iS": 15832,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/android-chrome-144x144.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 27007,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/android-chrome-192x192.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/android-chrome-36x36.png": {
+		"ft": 32768,
+		"iS": 2671,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/android-chrome-36x36.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/android-chrome-48x48.png": {
+		"ft": 32768,
+		"iS": 3798,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/android-chrome-48x48.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/android-chrome-72x72.png": {
+		"ft": 32768,
+		"iS": 6219,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/android-chrome-72x72.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/android-chrome-96x96.png": {
+		"ft": 32768,
+		"iS": 8694,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/android-chrome-96x96.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-114x114.png": {
+		"ft": 32768,
+		"iS": 9374,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-114x114.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-120x120.png": {
+		"ft": 32768,
+		"iS": 9862,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-120x120.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-144x144.png": {
+		"ft": 32768,
+		"iS": 12188,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-144x144.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-152x152.png": {
+		"ft": 32768,
+		"iS": 12939,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-152x152.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-180x180.png": {
+		"ft": 32768,
+		"iS": 15558,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-180x180.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-57x57.png": {
+		"ft": 32768,
+		"iS": 4568,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-57x57.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-60x60.png": {
+		"ft": 32768,
+		"iS": 4805,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-60x60.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-72x72.png": {
+		"ft": 32768,
+		"iS": 5800,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-72x72.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-76x76.png": {
+		"ft": 32768,
+		"iS": 6179,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-76x76.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon-precomposed.png": {
+		"ft": 32768,
+		"iS": 15106,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon-precomposed.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 15558,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/apple-touch-icon.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/browserconfig.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/img\/favicon\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/source\/img\/favicon\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 1260,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/favicon-16x16.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 2341,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/favicon-32x32.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/favicon-96x96.png": {
+		"ft": 32768,
+		"iS": 8694,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/favicon-96x96.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/img\/favicon\/favicon.ico",
+		"oF": 0
+		},
+	"\/source\/img\/favicon\/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/img\/favicon\/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/source\/img\/favicon\/mstile-144x144.png": {
+		"ft": 32768,
+		"iS": 5646,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/mstile-144x144.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 6197,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/mstile-150x150.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/mstile-310x150.png": {
+		"ft": 32768,
+		"iS": 7016,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/mstile-310x150.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/mstile-310x310.png": {
+		"ft": 32768,
+		"iS": 15035,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/mstile-310x310.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/favicon\/mstile-70x70.png": {
+		"ft": 32768,
+		"iS": 4069,
+		"oA": 0,
+		"oAP": "\/build\/img\/favicon\/mstile-70x70.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/source\/index-carousel.kit": {
 		"ft": 2048,
 		"oA": 0,
