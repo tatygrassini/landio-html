@@ -47,6 +47,78 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/source\/img\/bg-header-2.jpg": {
+		"ft": 16384,
+		"iS": 154202,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-header-2.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/bg-header-3.jpg": {
+		"ft": 16384,
+		"iS": 150376,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-header-3.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/bg-header.jpg": {
+		"ft": 16384,
+		"iS": 761450,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-header.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/bg-testimonials.jpg": {
+		"ft": 16384,
+		"iS": 52963,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-testimonials.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/face1.jpg": {
+		"ft": 16384,
+		"iS": 3290,
+		"oA": 0,
+		"oAP": "\/build\/img\/face1.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/face2.jpg": {
+		"ft": 16384,
+		"iS": 4154,
+		"oA": 0,
+		"oAP": "\/build\/img\/face2.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/face3.jpg": {
+		"ft": 16384,
+		"iS": 3681,
+		"oA": 0,
+		"oAP": "\/build\/img\/face3.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/face4.jpg": {
+		"ft": 16384,
+		"iS": 5886,
+		"oA": 0,
+		"oAP": "\/build\/img\/face4.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/face5.jpg": {
+		"ft": 16384,
+		"iS": 3303,
+		"oA": 0,
+		"oAP": "\/build\/img\/face5.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/source\/img\/favicon\/android-chrome-144x144.png": {
 		"ft": 32768,
 		"iS": 15832,
@@ -266,6 +338,46 @@
 		"oAP": "\/build\/img\/favicon\/mstile-70x70.png",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/source\/img\/icon-email.png": {
+		"ft": 32768,
+		"iS": 347,
+		"oA": 0,
+		"oAP": "\/build\/img\/icon-email.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/icon-lock.png": {
+		"ft": 32768,
+		"iS": 321,
+		"oA": 0,
+		"oAP": "\/build\/img\/icon-lock.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/icon-user.png": {
+		"ft": 32768,
+		"iS": 272,
+		"oA": 0,
+		"oAP": "\/build\/img\/icon-user.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/source\/img\/mock.png": {
+		"ft": 32768,
+		"iS": 185220,
+		"oA": 0,
+		"oAP": "\/build\/img\/mock.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/source\/img\/video-poster.jpg": {
+		"ft": 16384,
+		"iS": 456997,
+		"oA": 0,
+		"oAP": "\/build\/img\/video-poster.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/source\/index-carousel.kit": {
 		"ft": 2048,
@@ -1583,6 +1695,42 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/source\/scss\/fonts\/icomoon.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/scss\/fonts\/icomoon.eot",
+		"oF": 0
+		},
+	"\/source\/scss\/fonts\/icomoon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/scss\/fonts\/icomoon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/scss\/fonts\/icomoon.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/scss\/fonts\/icomoon.ttf",
+		"oF": 0
+		},
+	"\/source\/scss\/fonts\/icomoon.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/scss\/fonts\/icomoon.woff",
+		"oF": 0
+		},
+	"\/source\/scss\/fonts\/selection.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/build\/scss\/fonts\/selection-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/source\/scss\/landio.scss": {
 		"aP": 1,
