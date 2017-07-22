@@ -253,16 +253,19 @@
 
 .vjs-default-skin .vjs-big-play-button {
   position: absolute;
-  color: #fff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 51px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
   z-index: 2;
+  transform: translate(-50%, -50%);
 
   &:before {
     content: "\e611"; // PLAY icon
     font-family: 'icomoon';
-    font-size: 3.1rem;
+    font-size: 50px;
   }
 
   &:hover { cursor: pointer; }
