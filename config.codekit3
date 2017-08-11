@@ -624,6 +624,19 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/source\/scss\/_custom_old.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/_custom_old.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/scss\/_icomoon.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -656,7 +669,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/_animation.scss": {
+	"\/source\/scss\/bootstrap\/_badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 3,
@@ -664,7 +677,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/build\/scss\/css\/_animation.css",
+		"oAP": "\/build\/scss\/css\/_badge.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -955,19 +968,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/_pager.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/css\/_pager.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1059,19 +1059,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/_tags.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/css\/_tags.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/_tooltip.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1081,6 +1068,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_tooltip.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/_transitions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_transitions.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1124,19 +1124,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/bootstrap-flex.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/build\/scss\/css\/bootstrap-flex.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/bootstrap-grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1170,7 +1157,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/scss\/css\/bootstrap.css",
 		"oF": 0,
 		"oS": 3,
@@ -1198,6 +1185,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_background-variant.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/mixins\/_badge.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_badge.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1263,6 +1263,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_clearfix.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/mixins\/_float.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_float.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1410,45 +1423,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/mixins\/_progress.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_progress.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/source\/scss\/bootstrap\/mixins\/_pulls.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_pulls.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/source\/scss\/bootstrap\/mixins\/_reset-filter.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_reset-filter.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/mixins\/_reset-text.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1501,19 +1475,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/mixins\/_tab-focus.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_tab-focus.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/mixins\/_table-row.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1523,19 +1484,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_table-row.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/source\/scss\/bootstrap\/mixins\/_tag.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_tag.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1579,6 +1527,45 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/scss\/bootstrap\/mixins\/_transforms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_transforms.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/mixins\/_visibility.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_visibility.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/utilities\/_align.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_align.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/scss\/bootstrap\/utilities\/_background.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1588,6 +1575,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_background.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/utilities\/_borders.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_borders.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1631,7 +1631,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/utilities\/_pulls.scss": {
+	"\/source\/scss\/bootstrap\/utilities\/_float.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 3,
@@ -1639,7 +1639,20 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_pulls.css",
+		"oAP": "\/build\/scss\/bootstrap\/css\/_float.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/utilities\/_position.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_position.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1653,6 +1666,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_screenreaders.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/utilities\/_sizing.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_sizing.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
