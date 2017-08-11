@@ -7,7 +7,7 @@
 		"uuidString": "5CA8D96D-2BAB-413A-9110-7581D8491A56"
 		}
 	],
-"creatorBuild": "25849",
+"creatorBuild": "25568",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -53,9 +53,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/bg-header-2.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/bg-header-3.jpg": {
 		"ft": 16384,
@@ -63,9 +61,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/bg-header-3.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/bg-header.jpg": {
 		"ft": 16384,
@@ -73,9 +69,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/bg-header.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/bg-testimonials.jpg": {
 		"ft": 16384,
@@ -83,9 +77,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/bg-testimonials.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/face1.jpg": {
 		"ft": 16384,
@@ -93,9 +85,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/face1.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/face2.jpg": {
 		"ft": 16384,
@@ -103,9 +93,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/face2.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/face3.jpg": {
 		"ft": 16384,
@@ -113,9 +101,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/face3.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/face4.jpg": {
 		"ft": 16384,
@@ -123,9 +109,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/face4.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/face5.jpg": {
 		"ft": 16384,
@@ -133,9 +117,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/face5.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/favicon\/android-chrome-144x144.png": {
 		"ft": 32768,
@@ -143,10 +125,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/android-chrome-144x144.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/android-chrome-192x192.png": {
 		"ft": 32768,
@@ -154,10 +133,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/android-chrome-192x192.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/android-chrome-36x36.png": {
 		"ft": 32768,
@@ -165,10 +141,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/android-chrome-36x36.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/android-chrome-48x48.png": {
 		"ft": 32768,
@@ -176,10 +149,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/android-chrome-48x48.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/android-chrome-72x72.png": {
 		"ft": 32768,
@@ -187,10 +157,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/android-chrome-72x72.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/android-chrome-96x96.png": {
 		"ft": 32768,
@@ -198,10 +165,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/android-chrome-96x96.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-114x114.png": {
 		"ft": 32768,
@@ -209,10 +173,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-114x114.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-120x120.png": {
 		"ft": 32768,
@@ -220,10 +181,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-120x120.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-144x144.png": {
 		"ft": 32768,
@@ -231,10 +189,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-144x144.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-152x152.png": {
 		"ft": 32768,
@@ -242,10 +197,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-152x152.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-180x180.png": {
 		"ft": 32768,
@@ -253,10 +205,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-180x180.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-57x57.png": {
 		"ft": 32768,
@@ -264,10 +213,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-57x57.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-60x60.png": {
 		"ft": 32768,
@@ -275,10 +221,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-60x60.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-72x72.png": {
 		"ft": 32768,
@@ -286,10 +229,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-72x72.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-76x76.png": {
 		"ft": 32768,
@@ -297,10 +237,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-76x76.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon-precomposed.png": {
 		"ft": 32768,
@@ -308,10 +245,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon-precomposed.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/apple-touch-icon.png": {
 		"ft": 32768,
@@ -319,10 +253,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/apple-touch-icon.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/browserconfig.xml": {
 		"ft": 8192,
@@ -336,10 +267,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/favicon-16x16.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/favicon-32x32.png": {
 		"ft": 32768,
@@ -347,10 +275,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/favicon-32x32.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/favicon-96x96.png": {
 		"ft": 32768,
@@ -358,10 +283,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/favicon-96x96.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/favicon.ico": {
 		"ft": 8192,
@@ -383,10 +305,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/mstile-144x144.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/mstile-150x150.png": {
 		"ft": 32768,
@@ -394,10 +313,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/mstile-150x150.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/mstile-310x150.png": {
 		"ft": 32768,
@@ -405,10 +321,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/mstile-310x150.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/mstile-310x310.png": {
 		"ft": 32768,
@@ -416,10 +329,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/mstile-310x310.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/favicon\/mstile-70x70.png": {
 		"ft": 32768,
@@ -427,10 +337,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/favicon\/mstile-70x70.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/icon-email.png": {
 		"ft": 32768,
@@ -438,10 +345,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/icon-email.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/icon-lock.png": {
 		"ft": 32768,
@@ -449,10 +353,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/icon-lock.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/icon-user.png": {
 		"ft": 32768,
@@ -460,10 +361,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/icon-user.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/img\/mock.png": {
 		"ft": 32768,
@@ -471,10 +369,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/mock.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"opt": 1
 		},
 	"\/source\/img\/video-poster.jpg": {
 		"ft": 16384,
@@ -482,9 +377,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/video-poster.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
 	"\/source\/index-carousel.kit": {
 		"ft": 2048,
@@ -731,6 +624,19 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/source\/scss\/_custom_old.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/_custom_old.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/scss\/_icomoon.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -746,9 +652,9 @@
 		},
 	"\/source\/scss\/bootstrap\/.scss-lint.yml": {
 		"ft": 8192,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/scss\/bootstrap\/.scss-lint.yml",
-		"oF": 1
+		"oF": 0
 		},
 	"\/source\/scss\/bootstrap\/_alert.scss": {
 		"aP": 0,
@@ -763,7 +669,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/_animation.scss": {
+	"\/source\/scss\/bootstrap\/_badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 3,
@@ -771,7 +677,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/build\/scss\/css\/_animation.css",
+		"oAP": "\/build\/scss\/css\/_badge.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1062,19 +968,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/_pager.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/css\/_pager.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1166,19 +1059,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/_tags.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/css\/_tags.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/_tooltip.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1188,6 +1068,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/css\/_tooltip.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/_transitions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/css\/_transitions.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1231,19 +1124,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/bootstrap-flex.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/css\/bootstrap-flex.css",
-		"oF": 1,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/bootstrap-grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1251,9 +1131,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/scss\/css\/bootstrap-grid.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -1264,9 +1144,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/scss\/css\/bootstrap-reboot.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -1277,7 +1157,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/scss\/css\/bootstrap.css",
 		"oF": 0,
 		"oS": 3,
@@ -1305,6 +1185,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_background-variant.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/mixins\/_badge.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_badge.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1370,6 +1263,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_clearfix.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/mixins\/_float.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_float.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1517,45 +1423,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/mixins\/_progress.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_progress.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/source\/scss\/bootstrap\/mixins\/_pulls.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_pulls.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/source\/scss\/bootstrap\/mixins\/_reset-filter.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_reset-filter.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/mixins\/_reset-text.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1608,19 +1475,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/mixins\/_tab-focus.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_tab-focus.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/scss\/bootstrap\/mixins\/_table-row.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1630,19 +1484,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_table-row.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/source\/scss\/bootstrap\/mixins\/_tag.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 3,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_tag.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1686,6 +1527,45 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/scss\/bootstrap\/mixins\/_transforms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_transforms.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/mixins\/_visibility.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_visibility.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/utilities\/_align.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_align.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/scss\/bootstrap\/utilities\/_background.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1695,6 +1575,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_background.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/utilities\/_borders.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_borders.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1738,7 +1631,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/scss\/bootstrap\/utilities\/_pulls.scss": {
+	"\/source\/scss\/bootstrap\/utilities\/_float.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 3,
@@ -1746,7 +1639,20 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "\/build\/scss\/bootstrap\/css\/_pulls.css",
+		"oAP": "\/build\/scss\/bootstrap\/css\/_float.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/utilities\/_position.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_position.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1760,6 +1666,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/scss\/bootstrap\/css\/_screenreaders.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/scss\/bootstrap\/utilities\/_sizing.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 3,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/scss\/bootstrap\/css\/_sizing.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -2566,10 +2485,6 @@
 			"active": 1,
 			"optionString": ""
 			},
-		"no-compare-neg-zero": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -2854,10 +2769,6 @@
 			"active": 0,
 			"optionString": ""
 			},
-		"no-prototype-builtins": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -3053,10 +2964,6 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
-			},
-		"nonblock-statement-body-position": {
-			"active": 0,
-			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -3657,8 +3564,7 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
-		"quality": 100
+		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -3681,6 +3587,14 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
+		},
+	"languageDefaultsJSX": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "jsx",
+		"autoOutputPathReplace2": "js",
+		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -3743,9 +3657,7 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
-		"optimizerType": 1,
-		"quality": 100
+		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -3830,7 +3742,6 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
-	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
