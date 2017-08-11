@@ -1,21 +1,15 @@
-'use strict';
+import Tooltip from './tooltip'
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.0.0-alpha.2): popover.js
+ * Bootstrap (v4.0.0-beta): popover.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
-var Popover = (function ($) {
+const Popover = (($) => {
+
 
   /**
    * ------------------------------------------------------------------------
@@ -23,46 +17,51 @@ var Popover = (function ($) {
    * ------------------------------------------------------------------------
    */
 
-  var NAME = 'popover';
-  var VERSION = '4.0.0-alpha';
-  var DATA_KEY = 'bs.popover';
-  var EVENT_KEY = '.' + DATA_KEY;
-  var JQUERY_NO_CONFLICT = $.fn[NAME];
+  const NAME                = 'popover'
+  const VERSION             = '4.0.0-beta'
+  const DATA_KEY            = 'bs.popover'
+  const EVENT_KEY           = `.${DATA_KEY}`
+  const JQUERY_NO_CONFLICT  = $.fn[NAME]
+  const CLASS_PREFIX        = 'bs-popover'
+  const BSCLS_PREFIX_REGEX  = new RegExp(`(^|\\s)${CLASS_PREFIX}\\S+`, 'g')
 
-  var Default = $.extend({}, Tooltip.Default, {
-    placement: 'right',
-    trigger: 'click',
-    content: '',
-    template: '<div class="popover" role="tooltip">' + '<div class="popover-arrow"></div>' + '<h3 class="popover-title"></h3>' + '<div class="popover-content"></div></div>'
-  });
+  const Default = $.extend({}, Tooltip.Default, {
+    placement : 'right',
+    trigger   : 'click',
+    content   : '',
+    template  : '<div class="popover" role="tooltip">'
+              + '<div class="arrow"></div>'
+              + '<h3 class="popover-header"></h3>'
+              + '<div class="popover-body"></div></div>'
+  })
 
-  var DefaultType = $.extend({}, Tooltip.DefaultType, {
-    content: '(string|element|function)'
-  });
+  const DefaultType = $.extend({}, Tooltip.DefaultType, {
+    content : '(string|element|function)'
+  })
 
-  var ClassName = {
-    FADE: 'fade',
-    IN: 'in'
-  };
+  const ClassName = {
+    FADE : 'fade',
+    SHOW : 'show'
+  }
 
-  var Selector = {
-    TITLE: '.popover-title',
-    CONTENT: '.popover-content',
-    ARROW: '.popover-arrow'
-  };
+  const Selector = {
+    TITLE   : '.popover-header',
+    CONTENT : '.popover-body'
+  }
 
-  var Event = {
-    HIDE: 'hide' + EVENT_KEY,
-    HIDDEN: 'hidden' + EVENT_KEY,
-    SHOW: 'show' + EVENT_KEY,
-    SHOWN: 'shown' + EVENT_KEY,
-    INSERTED: 'inserted' + EVENT_KEY,
-    CLICK: 'click' + EVENT_KEY,
-    FOCUSIN: 'focusin' + EVENT_KEY,
-    FOCUSOUT: 'focusout' + EVENT_KEY,
-    MOUSEENTER: 'mouseenter' + EVENT_KEY,
-    MOUSELEAVE: 'mouseleave' + EVENT_KEY
-  };
+  const Event = {
+    HIDE       : `hide${EVENT_KEY}`,
+    HIDDEN     : `hidden${EVENT_KEY}`,
+    SHOW       : `show${EVENT_KEY}`,
+    SHOWN      : `shown${EVENT_KEY}`,
+    INSERTED   : `inserted${EVENT_KEY}`,
+    CLICK      : `click${EVENT_KEY}`,
+    FOCUSIN    : `focusin${EVENT_KEY}`,
+    FOCUSOUT   : `focusout${EVENT_KEY}`,
+    MOUSEENTER : `mouseenter${EVENT_KEY}`,
+    MOUSELEAVE : `mouseleave${EVENT_KEY}`
+  }
+
 
   /**
    * ------------------------------------------------------------------------
@@ -70,132 +69,124 @@ var Popover = (function ($) {
    * ------------------------------------------------------------------------
    */
 
-  var Popover = (function (_Tooltip) {
-    _inherits(Popover, _Tooltip);
+  class Popover extends Tooltip {
 
-    function Popover() {
-      _classCallCheck(this, Popover);
 
-      _get(Object.getPrototypeOf(Popover.prototype), 'constructor', this).apply(this, arguments);
+    // getters
+
+    static get VERSION() {
+      return VERSION
     }
 
-    /**
-     * ------------------------------------------------------------------------
-     * jQuery
-     * ------------------------------------------------------------------------
-     */
+    static get Default() {
+      return Default
+    }
 
-    _createClass(Popover, [{
-      key: 'isWithContent',
+    static get NAME() {
+      return NAME
+    }
 
-      // overrides
+    static get DATA_KEY() {
+      return DATA_KEY
+    }
 
-      value: function isWithContent() {
-        return this.getTitle() || this._getContent();
+    static get Event() {
+      return Event
+    }
+
+    static get EVENT_KEY() {
+      return EVENT_KEY
+    }
+
+    static get DefaultType() {
+      return DefaultType
+    }
+
+
+    // overrides
+
+    isWithContent() {
+      return this.getTitle() || this._getContent()
+    }
+
+    addAttachmentClass(attachment) {
+      $(this.getTipElement()).addClass(`${CLASS_PREFIX}-${attachment}`)
+    }
+
+    getTipElement() {
+      return this.tip = this.tip || $(this.config.template)[0]
+    }
+
+    setContent() {
+      const $tip = $(this.getTipElement())
+
+      // we use append for html objects to maintain js events
+      this.setElementContent($tip.find(Selector.TITLE), this.getTitle())
+      this.setElementContent($tip.find(Selector.CONTENT), this._getContent())
+
+      $tip.removeClass(`${ClassName.FADE} ${ClassName.SHOW}`)
+    }
+
+    // private
+
+    _getContent() {
+      return this.element.getAttribute('data-content')
+        || (typeof this.config.content === 'function' ?
+              this.config.content.call(this.element) :
+              this.config.content)
+    }
+
+    _cleanTipClass() {
+      const $tip = $(this.getTipElement())
+      const tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX)
+      if (tabClass !== null && tabClass.length > 0) {
+        $tip.removeClass(tabClass.join(''))
       }
-    }, {
-      key: 'getTipElement',
-      value: function getTipElement() {
-        return this.tip = this.tip || $(this.config.template)[0];
-      }
-    }, {
-      key: 'setContent',
-      value: function setContent() {
-        var $tip = $(this.getTipElement());
+    }
 
-        // we use append for html objects to maintain js events
-        this.setElementContent($tip.find(Selector.TITLE), this.getTitle());
-        this.setElementContent($tip.find(Selector.CONTENT), this._getContent());
 
-        $tip.removeClass(ClassName.FADE).removeClass(ClassName.IN);
+    // static
 
-        this.cleanupTether();
-      }
+    static _jQueryInterface(config) {
+      return this.each(function () {
+        let data      = $(this).data(DATA_KEY)
+        const _config = typeof config === 'object' ? config : null
 
-      // private
+        if (!data && /destroy|hide/.test(config)) {
+          return
+        }
 
-    }, {
-      key: '_getContent',
-      value: function _getContent() {
-        return this.element.getAttribute('data-content') || (typeof this.config.content === 'function' ? this.config.content.call(this.element) : this.config.content);
-      }
+        if (!data) {
+          data = new Popover(this, _config)
+          $(this).data(DATA_KEY, data)
+        }
 
-      // static
-
-    }], [{
-      key: '_jQueryInterface',
-      value: function _jQueryInterface(config) {
-        return this.each(function () {
-          var data = $(this).data(DATA_KEY);
-          var _config = typeof config === 'object' ? config : null;
-
-          if (!data && /destroy|hide/.test(config)) {
-            return;
+        if (typeof config === 'string') {
+          if (data[config] === undefined) {
+            throw new Error(`No method named "${config}"`)
           }
+          data[config]()
+        }
+      })
+    }
+  }
 
-          if (!data) {
-            data = new Popover(this, _config);
-            $(this).data(DATA_KEY, data);
-          }
 
-          if (typeof config === 'string') {
-            if (data[config] === undefined) {
-              throw new Error('No method named "' + config + '"');
-            }
-            data[config]();
-          }
-        });
-      }
-    }, {
-      key: 'VERSION',
+  /**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
 
-      // getters
+  $.fn[NAME]             = Popover._jQueryInterface
+  $.fn[NAME].Constructor = Popover
+  $.fn[NAME].noConflict  = function () {
+    $.fn[NAME] = JQUERY_NO_CONFLICT
+    return Popover._jQueryInterface
+  }
 
-      get: function get() {
-        return VERSION;
-      }
-    }, {
-      key: 'Default',
-      get: function get() {
-        return Default;
-      }
-    }, {
-      key: 'NAME',
-      get: function get() {
-        return NAME;
-      }
-    }, {
-      key: 'DATA_KEY',
-      get: function get() {
-        return DATA_KEY;
-      }
-    }, {
-      key: 'Event',
-      get: function get() {
-        return Event;
-      }
-    }, {
-      key: 'EVENT_KEY',
-      get: function get() {
-        return EVENT_KEY;
-      }
-    }, {
-      key: 'DefaultType',
-      get: function get() {
-        return DefaultType;
-      }
-    }]);
+  return Popover
 
-    return Popover;
-  })(Tooltip);
+})(jQuery)
 
-  $.fn[NAME] = Popover._jQueryInterface;
-  $.fn[NAME].Constructor = Popover;
-  $.fn[NAME].noConflict = function () {
-    $.fn[NAME] = JQUERY_NO_CONFLICT;
-    return Popover._jQueryInterface;
-  };
-
-  return Popover;
-})(jQuery);
-//# sourceMappingURL=popover.js.map
+export default Popover
