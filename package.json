@@ -1,0 +1,19 @@
+{
+  "name": "landio-html",
+  "version": "1.0.0",
+  "description": "![Version badge](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.2.7&x2=0)",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatygrassini/landio-html.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatygrassini/landio-html/issues"
+  },
+  "homepage": "https://github.com/tatygrassini/landio-html#readme",
+  "devDependencies": {
+  }
+}
