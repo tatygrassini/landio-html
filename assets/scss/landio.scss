@@ -26,7 +26,6 @@
 //  Social buttons
 //  Donut chart
 
-body {color: blue !important}
 
 //
 // =Fonts & Bootstrap
@@ -115,7 +114,7 @@ body {color: blue !important}
 
 $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
-.bg-inverse {
+.bg-dark {
   color: #fff;
 
   a,
@@ -125,7 +124,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   }
 }
 
-.bg-inverse-custom {
+.bg-dark-custom {
   margin-top: 1.1875rem;
   background-color: transparent !important;
 }
@@ -186,7 +185,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   }
 }
 
-.bg-inverse .navbar-toggler {
+.bg-dark .navbar-toggler {
   color: rgba(255, 255, 255, .75);
 
   &:focus,
@@ -276,7 +275,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
     }
   }
 
-  .bg-inverse-custom .navbar-nav {
+  .bg-dark-custom .navbar-nav {
 
     .nav-item {
       background-color: #fff;
@@ -432,7 +431,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   }
 }
 
-.bg-inverse .dropdown-item {
+.bg-dark .dropdown-item {
   color: $gray-700;
 
   &:focus,
@@ -522,7 +521,7 @@ h6 {
   }
 }
 
-.bg-inverse .navbar-form .form-control {
+.bg-dark .navbar-form .form-control {
 
   @include media-breakpoint-up(md) {
 
@@ -557,7 +556,7 @@ h6 {
   span { vertical-align: middle; }
 }
 
-.bg-inverse .dropdown-toggle {
+.bg-dark .dropdown-toggle {
   img {
     box-shadow: 0 0 0 4px #fff;
   }
@@ -791,7 +790,7 @@ h2 {
   }
 }
 
-.bg-inverse .btn-secondary-outline {
+.bg-dark .btn-secondary-outline {
   &:focus,
   &:hover {
     background-color: rgba(255, 255, 255, .5);
@@ -1256,11 +1255,7 @@ figure { position: relative; }
     padding: 1rem;
 
     @include media-breakpoint-up(lg) {
-      padding: 4rem 0;
-    }
-
-    @include media-breakpoint-up(xl) {
-      padding: 6.5rem 0;
+      padding: 0;
     }
   }
 
@@ -1283,7 +1278,7 @@ figure { position: relative; }
   }
 }
 
-.tag {
+.badge {
   padding: .35em .85em;
   margin-bottom: .5rem;
   font-size: .8125rem;
@@ -1298,7 +1293,7 @@ figure { position: relative; }
   }
 }
 
-.tag-default {
+.badge-default {
   padding-right: 0;
   padding-left: 0;
   margin-right: .5rem;
@@ -1554,7 +1549,7 @@ figure { position: relative; }
   }
 }
 
-.section-footer.bg-inverse {
+.section-footer.bg-dark {
   color: #fff;
 
   .nav-inline > li {

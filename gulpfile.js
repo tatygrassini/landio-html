@@ -21,7 +21,7 @@ gulp.task('sass', function () {
     .pipe(autoprefixer({
       browsers: [
         "Explorer >= 10",
-        "iOS >= 4", // Apple iPhone 5
+        "iOS >= 9.3", // Apple iPhone 5
         "Android >= 5"
       ]
     }))
