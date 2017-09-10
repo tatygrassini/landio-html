@@ -1305,7 +1305,7 @@ figure { position: relative; }
 
   &:before {
     position: absolute;
-    top: 10px;
+    top: 14px;
     left: 48px;
     width: 1px;
     height: 1.8125rem;
@@ -1315,7 +1315,7 @@ figure { position: relative; }
 
   &:after {
     position: absolute;
-    top: 11px;
+    top: 14px;
     left: 16px;
     z-index: 9999;
     width: 30px;
@@ -1417,6 +1417,10 @@ figure { position: relative; }
   background-color: map-get($theme-colors, primary);
 }
 
+.btn {
+  cursor: pointer;
+}
+
 .btn-lg {
   padding: 1.36rem 1rem 1.266rem;
   border-radius: 2rem;
@@ -1459,17 +1463,16 @@ figure { position: relative; }
     }
   }
 
-  .media-left {
+  .icon-logo {
     padding-right: 1.75rem;
 
     @include media-breakpoint-down(sm) {
-      display: block;
       padding: 0;
-      margin: 0 0 1rem;
+      margin-bottom: 1rem;
     }
   }
 
-  .nav-inline {
+  .nav {
     font-size: .9375rem;
     font-weight: 600;
     line-height: 1.2;
@@ -1483,7 +1486,7 @@ figure { position: relative; }
       padding-top: 1.65rem;
     }
 
-    > li {
+    .nav-item {
       padding-right: 1rem;
       padding-left: 1rem;
 
@@ -1508,13 +1511,10 @@ figure { position: relative; }
 
       a {
         display: inline-block;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        margin-bottom: .5rem;
-
+        padding: .5rem 0;
+        
         @include media-breakpoint-down(lg) {
-          padding-top: 1rem;
-          padding-bottom: 1rem;
+          padding: 1rem 0;
         }
       }
     }
