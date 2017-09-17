@@ -1193,6 +1193,7 @@ figure { position: relative; }
       text-indent: inherit;
       border: 0;
       border-radius: 0;
+      background-color: transparent;
       opacity: .5;
       transition: opacity .2s;
 
@@ -1449,18 +1450,11 @@ figure { position: relative; }
       margin-bottom: 2rem;
       text-align: center;
     }
+  }
 
-    @include media-breakpoint-up(md) {
-      padding-top: 1.75rem;
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding-top: 0;
-    }
-
-    @include media-breakpoint-up(xl) {
-      padding-top: .55rem;
-    }
+  .media-body {
+    display: block;
+    margin: auto;
   }
 
   .icon-logo {

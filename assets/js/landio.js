@@ -1,34 +1,3 @@
-
-// @codekit-prepend "bootstrap/util.js";
-// @codekit-prepend "bootstrap/alert.js";
-// @codekit-prepend "bootstrap/button.js";
-// @codekit-prepend "bootstrap/carousel.js";
-// @codekit-prepend "bootstrap/collapse.js";
-// @codekit-prepend "bootstrap/dropdown.js";
-// @codekit-prepend "bootstrap/modal.js";
-// @codekit-prepend "bootstrap/scrollspy.js";
-// @codekit-prepend "bootstrap/tab.js";
-// @codekit-prepend "bootstrap/tooltip.js";
-// @codekit-prepend "bootstrap/popover.js";
-
-
-
-// Waypoints
-// @codekit-prepend "plugins/jquery.waypoints.js"
-
-// Placeholders
-// @codekit-prepend "plugins/jquery.placeholder.js";
-
-// Video JS
-// @codekit-prepend "plugins/video.js";
-
-// Vimeo modal autoplay
-// @codekit-prepend "plugins/jquery.vimeo.api.js";
-
-// Donut Chart
-// @codekit-prepend "plugins/chart.js";
-
-
 (function ($) {
   "use strict";
 
@@ -73,10 +42,6 @@
     }, {
       offset: '60%'
     });
-  }
-
-  function inputPlaceholders() {
-    $('input, textarea').placeholder();
   }
 
   function navMobileCollapse() {
@@ -213,7 +178,6 @@
 
   function init() {
     onScrollAnimations();
-    inputPlaceholders();
     navMobileCollapse();
     navSearch();
     htmlVideo();
