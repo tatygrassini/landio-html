@@ -254,7 +254,7 @@
       <div class="container">
         <h3 class="sr-only">Testimonials</h3>
         <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
-          <div class="carousel-inner" role="listbox">
+          <div class="carousel-inner">
             <div class="carousel-item active">
               <blockquote class="blockquote">
                 <img src="assets/img/face1.jpg" height="80" width="80" alt="Avatar" class="rounded-circle">
@@ -292,11 +292,11 @@
             </div>
           </div>
           <ol class="carousel-indicators">
-            <li class="active"><img src="assets/img/face1.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="0" class="img-fluid rounded-circle"></li>
-            <li><img src="assets/img/face2.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="1" class="img-fluid rounded-circle"></li>
-            <li><img src="assets/img/face3.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="2" class="img-fluid rounded-circle"></li>
-            <li><img src="assets/img/face4.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="3" class="img-fluid rounded-circle"></li>
-            <li><img src="assets/img/face5.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="4" class="img-fluid rounded-circle"></li>
+            <li data-target="#carousel-testimonials" data-slide-to="0" class="active"><img src="assets/img/face1.jpg" alt="Navigation avatar" class="img-fluid rounded-circle"></li>
+            <li data-target="#carousel-testimonials" data-slide-to="1"><img src="assets/img/face2.jpg" alt="Navigation avatar" class="img-fluid rounded-circle"></li>
+            <li data-target="#carousel-testimonials" data-slide-to="2"><img src="assets/img/face3.jpg" alt="Navigation avatar" class="img-fluid rounded-circle"></li>
+            <li data-target="#carousel-testimonials" data-slide-to="3"><img src="assets/img/face4.jpg" alt="Navigation avatar" class="img-fluid rounded-circle"></li>
+            <li data-target="#carousel-testimonials" data-slide-to="4"><img src="assets/img/face5.jpg" alt="Navigation avatar" class="img-fluid rounded-circle"></li>
           </ol>
         </div>
       </div>
@@ -437,6 +437,7 @@
     
 
     <script src="/assets/js/plugins/jquery.min.js"></script>
+    <script src="/assets/js/plugins/bootstrap.min.js"></script>
     <script src="/assets/js/plugins/popper.min.js"></script>
     <script src="/assets/js/plugins/jquery.waypoints.min.js"></script>
     <script src="/assets/js/plugins/video.js"></script>

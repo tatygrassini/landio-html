@@ -1119,8 +1119,14 @@ figure { position: relative; }
 // --------------------------------------------------
 
 .section-testimonials {
+  padding-bottom: 3rem;
   background: #663fb5 url(../img/bg-testimonials.jpg) no-repeat center bottom;
   background-size: cover;
+  
+  
+  @include media-breakpoint-up(md) {
+    padding-bottom: 2.5rem;
+  }
 
   .blockquote {
     margin: 0 auto 2rem;
@@ -1176,7 +1182,7 @@ figure { position: relative; }
     bottom: auto;
     left: auto;
     width: auto;
-    margin: 0 0 2.1875rem;
+    margin: 0;
 
     img {
       width: 45px;
