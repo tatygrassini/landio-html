@@ -54,7 +54,7 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
+$gray-600: #818a91 !default;
 $gray-700: #424753 !default;
 $gray-800: #343a40 !default;
 $gray-900: #312f38 !default;
@@ -156,7 +156,7 @@ $sizes: (
 // Settings for the `<body>` element.
 
 $body-bg:       $white !default;
-$body-color:    $gray-900 !default;
+$body-color:    $gray-700 !default;
 
 // Links
 //
@@ -246,7 +246,7 @@ $font-weight-base: $font-weight-normal !default;
 $line-height-base: 2 !default;
 
 $h1-font-size: 2.5rem !default;
-$h2-font-size: 2rem !default;
+$h2-font-size: 1.625rem !default;
 $h3-font-size: 1.75rem !default;
 $h4-font-size: 1.5rem !default;
 $h5-font-size: 1.125rem !default;
@@ -255,21 +255,21 @@ $h6-font-size: 1rem !default;
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   inherit !default;
 $headings-font-weight:   500 !default;
-$headings-line-height:   1.1 !default;
+$headings-line-height:   1.175 !default;
 $headings-color:         inherit !default;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;
-$display3-size: 4.5rem !default;
+$display3-size: 5rem !default;
 $display4-size: 3.5rem !default;
 
 $display1-weight:     300 !default;
 $display2-weight:     300 !default;
-$display3-weight:     300 !default;
+$display3-weight:     500 !default;
 $display4-weight:     300 !default;
 $display-line-height: $headings-line-height !default;
 
-$lead-font-size:   1.25rem !default;
+$lead-font-size:   1rem !default;
 $lead-font-weight: 300 !default;
 
 $small-font-size: 80% !default;
@@ -529,7 +529,7 @@ $zindex-tooltip:            1070 !default;
 // Navs
 
 $nav-link-padding-y:            .5rem !default;
-$nav-link-padding-x:            1rem !default;
+$nav-link-padding-x:            .7rem !default;
 $nav-link-disabled-color:       $gray-600 !default;
 
 $nav-tabs-border-color:                       #ddd !default;
@@ -560,7 +560,7 @@ $navbar-toggler-padding-x:           .75rem !default;
 $navbar-toggler-font-size:           $font-size-lg !default;
 $navbar-toggler-border-radius:       $btn-border-radius !default;
 
-$navbar-dark-color:                 rgba($white,.5) !default;
+$navbar-dark-color:                 $white !default;
 $navbar-dark-hover-color:           rgba($white,.75) !default;
 $navbar-dark-active-color:          rgba($white,1) !default;
 $navbar-dark-disabled-color:        rgba($white,.25) !default;

@@ -34,54 +34,91 @@
 
     <!-- Navigation
     ================================================== -->
-    <!-- 
-    <nav class="navbar navbar-expanded-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <span class="icon-logo"></span>
-        <span class="sr-only">Land.io</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-inverse-custom">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="icon-logo"></span>
+          <span class="sr-only">Land.io</span>
+        </a>
+        <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
         &#9776;
-      </button>
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link   $indexCarouselActive?   " href="./index-carousel.html">
-            <small>NEW</small> Slides<span class="sr-only">(current)</span>
-          </a>
-          <a class="nav-item nav-link" href="ui-elements.html">UI Kit</a>
-          <a class="nav-item nav-link" href="https://github.com/tatygrassini/landio-html" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </a>
+        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+          <span class="icon-user"></span>
+        </a>
+        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="./index-carousel.html"><small>NEW</small> Slides<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="ui-elements.html">UI Kit</a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="https://github.com/tatygrassini/landio-html" target="_blank">GitHub</a>
+            </li>
+            <li class="nav-item nav-item-toggable hidden-md-up">
+              <form class="navbar-form">
+                <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+              </form>
+            </li>
+            <li class="navbar-divider hidden-sm-down"></li>
+            <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
+              <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="icon-search"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenu1">
+                <form class="navbar-form">
+                  <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+                </form>
+              </div>
+            </li>
+            <li class="nav-item dropdown hidden-sm-down textselect-off">
+              <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="/assets/img/face5.jpg" height="40" width="40" alt="Avatar" class="rounded-circle"> <span class="icon-caret-down"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenu2">
+                <div class="media">
+                  <div class="media-left">
+                    <img src="/assets/img/face5.jpg" height="60" width="60" alt="Avatar" class="rounded-circle">
+                  </div>
+                  <div class="media-body media-middle">
+                    <h5 class="media-heading">Joel Fisher</h5>
+                    <h6>hey@joelfisher.com</h6>
+                  </div>
+                </div>
+                <a href="#" class="dropdown-item text-uppercase">View posts</a>
+                <a href="#" class="dropdown-item text-uppercase">Manage groups</a>
+                <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
+                <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
+                <a href="#" class="btn-circle has-gradient pull-xs-right">
+                  <span class="sr-only">Edit</span>
+                  <span class="icon-edit"></span>
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
-    -->
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+        <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
+          <div class="media m-t-1">
+            <div class="media-left">
+              <img src="/assets/img/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
             </div>
-          </li>
-        </ul>
+            <div class="media-body media-middle">
+              <h5 class="media-heading">Joel Fisher</h5>
+              <h6>hey@joelfisher.com</h6>
+            </div>
+          </div>
+          <a href="#" class="dropdown-item text-uppercase">View posts</a>
+          <a href="#" class="dropdown-item text-uppercase">Manage groups</a>
+          <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
+          <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
+          <a href="#" class="btn-circle has-gradient pull-xs-right m-b-1">
+            <span class="sr-only">Edit</span>
+            <span class="icon-edit"></span>
+          </a>
+        </div>
       </div>
     </nav>
     
@@ -89,16 +126,16 @@
     <!-- Hero Section
     ================================================== -->
     
-    <header class="jumbotron bg-dark text-center center-vertically" role="banner">
+    <header class="jumbotron bg-dark d-md-flex flex-md-column justify-content-md-center align-items-md-center" role="banner">
     
-      <div class="jumbotron-text-wrapper">
+      <div class="jumbotron-text-wrapper text-center">
         <h1 class="display-3">Land.io, blissful innovation.</h1>
         <h2 class="mb-5">Craft your journey, <em>absolutely free</em>, with <a href="ui-elements.html" class="jumbolink">Land.io UI kit</a>.</h2>
-        <a class="btn btn-outline-secondary mb-3" href="http://tympanus.net/codrops/?p=25217" role="button"><span class="icon-sketch"></span>Sketch included</a>
+        <a class="btn btn-outline-light btn-lg btn-outline-light mb-4 mb-md-0" href="http://tympanus.net/codrops/?p=25217" role="button"><span class="icon-sketch"></span>Sketch included</a>
       </div>
       
     
-      <ul class="nav nav-inline social-share">
+      <ul class="nav social-share justify-content-center">
         <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
         <li class="nav-item"><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
         <li class="nav-item"><a class="nav-link" href="#"><span class="icon-linkedin"></span> 356</a></li>
@@ -127,7 +164,7 @@
           <div class="col-md-4">
             <div class="card">
               <div class="card-body">
-                <span class="icon-pen display-1"></span>
+                <span class="icon-pen display-4"></span>
                 <h4 class="card-title">250</h4>
                 <h6 class="card-subtitle text-muted">UI Elements</h6>
                 <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
@@ -137,7 +174,7 @@
           <div class="col-md-4">
             <div class="card">
               <div class="card-body">
-                <span class="icon-thunderbolt display-1"></span>
+                <span class="icon-thunderbolt display-4"></span>
                 <h4 class="card-title">Ultra</h4>
                 <h6 class="card-subtitle text-muted">Modern design</h6>
                 <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
@@ -147,7 +184,7 @@
           <div class="col-md-4">
             <div class="card mb-0">
               <div class="card-body">
-                <span class="icon-heart display-1"></span>
+                <span class="icon-heart display-4"></span>
                 <h4 class="card-title">Free</h4>
                 <h6 class="card-subtitle text-muted">Forever and ever</h6>
                 <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
@@ -196,7 +233,7 @@
                 <li class="list-group-item">Sed risus feugiat fusce eu sit</li>
                 <li class="list-group-item">Sed risus feugiat fusce</li>
               </ul>
-              <a href="#" class="btn btn-primary-outline">Get Started</a>
+              <a href="#" class="btn btn-outline-primary btn-lg align-self-center">Get Started</a>
             </div>
           </div>
           <div class="col-md-4 stacking-top">
@@ -218,7 +255,7 @@
                 <li class="list-group-item">Sed risus feugiat fusce</li>
                 <li class="list-group-item">Sed risus feugiat</li>
               </ul>
-              <a href="#" class="btn btn-primary">Get Started</a>
+              <a href="#" class="btn btn-primary btn-lg align-self-center">Get Started</a>
             </div>
           </div>
           <div class="col-md-4 p-t-md wp wp-6">
@@ -239,7 +276,7 @@
                 <li class="list-group-item">Sed risus feugiat fusce eu sit</li>
                 <li class="list-group-item">Sed risus feugiat fusce</li>
               </ul>
-              <a href="#" class="btn btn-primary-outline">Get Started</a>
+              <a href="#" class="btn btn-outline-primary btn-lg align-self-center">Get Started</a>
             </div>
           </div>
         </div>
@@ -437,8 +474,8 @@
     
 
     <script src="/assets/js/plugins/jquery.min.js"></script>
-    <script src="/assets/js/plugins/bootstrap.min.js"></script>
     <script src="/assets/js/plugins/popper.min.js"></script>
+    <script src="/assets/js/plugins/bootstrap.min.js"></script>
     <script src="/assets/js/plugins/jquery.waypoints.min.js"></script>
     <script src="/assets/js/plugins/video.js"></script>
     <script src="/assets/js/plugins/jquery.vimeo.api.min.js"></script>
