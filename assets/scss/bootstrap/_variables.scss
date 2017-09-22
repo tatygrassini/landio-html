@@ -73,7 +73,7 @@ $grays: (
 ) !default;
 
 $blue:    #007bff !default;
-$indigo:  #6610f2 !default;
+$indigo:  #6c59b4 !default;
 $purple:  #6c59b4 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
@@ -250,7 +250,7 @@ $h2-font-size: 1.625rem !default;
 $h3-font-size: 1.75rem !default;
 $h4-font-size: 1.5rem !default;
 $h5-font-size: 1.125rem !default;
-$h6-font-size: 1rem !default;
+$h6-font-size: 0.875rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   inherit !default;
@@ -499,11 +499,11 @@ $dropdown-divider-bg:            $gray-200 !default;
 $dropdown-box-shadow:            0 .5rem 1rem rgba($black,.175) !default;
 
 $dropdown-link-color:            $gray-900 !default;
-$dropdown-link-hover-color:      darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg:         $gray-100 !default;
+$dropdown-link-hover-color:      $indigo !default;
+$dropdown-link-hover-bg:         transparent !default;
 
-$dropdown-link-active-color:     $component-active-color !default;
-$dropdown-link-active-bg:        $component-active-bg !default;
+$dropdown-link-active-color:     $indigo !default;
+$dropdown-link-active-bg:        transparent !default;
 
 $dropdown-link-disabled-color:   $gray-600 !default;
 

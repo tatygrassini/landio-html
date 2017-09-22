@@ -1,6 +1,7 @@
 (function ($) {
   "use strict";
 
+
   function onScrollAnimations() {
     $('.wp-1').waypoint(function() {
       $('.wp-1').addClass('animated fadeInUp');
@@ -44,6 +45,7 @@
     });
   }
 
+
   function navMobileCollapse() {
     // avoid having both mobile navs opened at the same time
     $('#collapsingMobileUser').on('show.bs.collapse', function () {
@@ -65,11 +67,12 @@
     });
   }
 
+
   function navSearch() {
     // hide first nav items when search is opened
     $('.nav-dropdown-search').on('show.bs.dropdown', function () {
       $(this).siblings().not('.navbar-nav .dropdown').addClass('sr-only');
-    })
+    });
     // cursor focus
     $('.nav-dropdown-search').on('shown.bs.dropdown', function () {
       $('.navbar-search-input').focus();
@@ -79,6 +82,7 @@
       $(this).siblings().removeClass('sr-only');
     });
   }
+
 
   function htmlVideo() {
     videojs("demo_video", {
@@ -102,6 +106,7 @@
     });
   }
 
+
   function scrollToTop() {
     $('.scroll-top').on( 'click', function() {
       $('html, body').animate({
@@ -110,6 +115,7 @@
       return false;
     });
   }
+
 
   function donutChart() {
     var doughnutData = [
@@ -146,6 +152,7 @@
     };
   }
 
+
   function videoModal() {
 
     // VIMEO
@@ -176,6 +183,7 @@
     });
   }
 
+
   function init() {
     onScrollAnimations();
     navMobileCollapse();
@@ -186,6 +194,7 @@
     videoModal();
   }
 
+  
   init();
 
 })(jQuery);
