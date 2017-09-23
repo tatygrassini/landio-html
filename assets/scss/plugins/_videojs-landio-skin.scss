@@ -135,7 +135,7 @@
   font-size: 20px;
   cursor: pointer;
   transform: translateX(-154px);
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     bottom: 3px;
   }
 }
@@ -151,7 +151,7 @@
   bottom: 40px;
   width: 16rem;
   transform: translateX(50%);
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     bottom: 30px;
   }
 }
@@ -237,7 +237,7 @@
   padding: 0.1875rem 0.8125rem;
   background-color: rgba(236,236,236,.4);
   border-radius: 0.25rem;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     display: none;
   }
 }
