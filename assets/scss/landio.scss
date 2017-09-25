@@ -129,10 +129,6 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   background-color: transparent !important;
 }
 
-.bg-white {
-  background-color: #fff;
-}
-
 .section-intro,
 .section-features,
 .section-pricing,
@@ -662,7 +658,6 @@ $custom-min-height: 37.5em; // 600
   }
 
   .btn {
-    padding: 1rem 2rem 1.35rem;
     border-color: #ccc;
 
     &:hover,
@@ -675,6 +670,8 @@ $custom-min-height: 37.5em; // 600
       display: inline-block;
       transform: translateY(3px);
     }
+
+    > span { vertical-align: initial; }
   }
 
   a.jumbolink {
@@ -831,6 +828,7 @@ h2 {
     margin-right: .3rem;
     font-size: 1.28rem;
     line-height: 1;
+    vertical-align: sub;
 
     &::before {
       transform: translateY(5px);
@@ -990,6 +988,7 @@ figure { position: relative; }
 
 .modal-video {
   width: auto;
+  max-width: none;
   margin: .9375rem;
 
   @include media-breakpoint-up(md) {
@@ -1502,6 +1501,9 @@ figure { position: relative; }
 .section-footer {
   padding-top: 4.4rem;
   padding-bottom: 3rem;
+  color: $gray-700;
+
+  a { color: $gray-700; }
 
   @include media-breakpoint-up(md) {
     padding-bottom: 4.4rem;
@@ -1594,7 +1596,9 @@ figure { position: relative; }
 }
 
 .section-footer.bg-dark {
-  color: #fff;
+  color: $white;
+
+  a { color: $white; }
 
   .nav-inline > li {
     &.active a {
@@ -1842,6 +1846,8 @@ $linkedin: #0077b5;
   width: 80%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
 
   &::before {
     position: absolute;
@@ -1855,5 +1861,7 @@ $linkedin: #0077b5;
     transform: translate(-50%,-50%);
   }
 
-  canvas { width: 170px; }
+  canvas {
+    width: 170px;
+  }
 }

@@ -117,42 +117,6 @@
   }
 
 
-  function donutChart() {
-    var doughnutData = [
-      {
-        value: 324,
-        color:"#5e98e3",
-        highlight: "#424753",
-        label: "Completed"
-      },
-      {
-        value: 34,
-        color: "#59d0bd",
-        highlight: "#424753",
-        label: "In backlog"
-      },
-      {
-        value: 20,
-        color: "#e8e9ec",
-        highlight: "#424753",
-        label: "Without ticket"
-      }
-    ];
-    window.onload = function(){
-      var c = document.getElementById("chart-area");
-      if (c != null) {
-        var ctx = c.getContext("2d");
-        window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {
-          responsive : true,
-          percentageInnerCutout : 80
-        });
-      } else {
-        return false
-      }
-    };
-  }
-
-
   function videoModal() {
 
     // VIMEO
@@ -190,11 +154,10 @@
     navSearch();
     htmlVideo();
     scrollToTop();
-    donutChart();
     videoModal();
   }
 
-  
+
   init();
 
 })(jQuery);
