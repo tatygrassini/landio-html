@@ -43,7 +43,7 @@ gulp.task('serve', ['sass'], function() {
   });
 
   gulp.watch('./assets/**/*.scss', ['sass']);
-  gulp.watch('./index.html').on('change', reload);
+  gulp.watch('./*.html').on('change', reload);
 });
 
 gulp.task('default', ['serve']);
