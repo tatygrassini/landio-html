@@ -272,46 +272,18 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   }
 
   .navbar-dark .navbar-nav {
+    .nav-item { background-color: transparent; }
 
-    .nav-item {
-      background-color: transparent;
-    }
-
-    .nav-link {
-      display: block;
-      color: darken(#fff, 20%);
-
-      &:focus,
-      &:hover {
-        color: #fff;
-      }
-    }
-
-    .active .nav-link {
-      color: #fff;
-    }
+    .nav-link { display: block; }
   }
 
   .navbar-dark .navbar-nav {
-
     .nav-item {
-      background-color: #fff;
-      border-bottom: 3px solid $indigo;
+      // background-color: #fff;
+      // border-bottom: 3px solid $indigo;
     }
 
-    .nav-link {
-      padding: 1rem;
-      color: lighten($gray-700, 20%);
-
-      &:focus,
-      &:hover {
-        color: $gray-700;
-      }
-    }
-
-    .active > .nav-link {
-      color: map-get($theme-colors, primary) !important;
-    }
+    .nav-link { padding: 1rem; }
   }
 }
 
@@ -330,11 +302,6 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 .icon-logo { font-size: 45px; }
 
 .navbar-nav .active > .nav-link {
-
-  @include media-breakpoint-down(sm) {
-    color: map-get($theme-colors, primary);
-  }
-
   @include media-breakpoint-up(md) {
     position: relative;
 
@@ -350,7 +317,16 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   }
 }
 
+.navbar-light .navbar-nav .active > .nav-link {
+  @include media-breakpoint-down(sm) {
+    color: $navbar-light-hover-color;
+  }
+}
+
 .navbar-dark .navbar-nav .active > .nav-link {
+  @include media-breakpoint-down(sm) {
+    color: $navbar-dark-hover-color;
+  }
 
   @include media-breakpoint-up(md) {
     position: relative;
@@ -539,8 +515,6 @@ h6 {
       &:-ms-input-placeholder { color: $gray-700; }
     }
 
-    // &:hover { cursor: pointer; }
-
     &:focus {
       box-shadow: none;
 
@@ -552,7 +526,6 @@ h6 {
 }
 
 .navbar-dark .navbar-form .form-control {
-
   @include media-breakpoint-up(md) {
 
     color: #fff;
@@ -604,7 +577,6 @@ h6 {
 
 // Scroll Nav
 @include media-breakpoint-up(md) {
-
   .scroll-nav {
     position: fixed;
     top: 50%;
@@ -658,6 +630,7 @@ $custom-min-height: 37.5em; // 600
   }
 
   .btn {
+    padding: 1.05rem 2rem 1.35rem;
     border-color: #ccc;
 
     &:hover,
