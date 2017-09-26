@@ -4,3 +4,4 @@ _
 .sass-cache
 config.codekit
 TODO
+node_modules
