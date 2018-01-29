@@ -1,0 +1,113 @@
+// Landio variables
+
+
+// Needed '!default' vars
+// for custom theme
+$theme-colors: () !default;
+$font-weight-normal:          400 !default;
+$font-size-base:              1rem !default;
+
+
+// Color system
+
+// stylelint-disable
+$white:    #fff;
+$gray-100: #f4f5f7;
+$gray-200: rgba(255, 255, 255, .5);
+$gray-600: #818a91;
+$gray-700: #424753;
+$gray-800: rgba(0, 0, 0, .5);
+$gray-900: #312f38;
+
+$blue:    #2b8be3;
+$indigo:  #6c59b4;
+$purple:  #6c59b4;
+
+$primary:       $purple;
+$info:          $blue;
+// stylelint-enable
+
+
+// Body
+
+$body-color:                $gray-700;
+
+
+// Links
+
+$link-hover-decoration:     none;
+
+
+// Fonts
+
+$font-family-sans-serif:      "Raleway", sans-serif;
+$font-weight-bold:            600;
+$line-height-base:            2;
+$h2-font-size:                $font-size-base * 1.625;
+$h6-font-size:                $font-size-base * .875;
+$headings-line-height:        1.175;
+$display3-size:               5rem;
+$lead-font-size:              ($font-size-base * 1);
+
+
+// Tables
+
+$table-border-color:          $gray-200;
+
+
+// Buttons + Forms
+
+$input-btn-padding-y:         1.4rem;
+$input-btn-padding-x:         4.375rem;
+$input-btn-line-height:       1.25;
+$input-btn-padding-y-lg:      .75rem;
+$input-btn-padding-x-lg:      1.25rem;
+
+
+// Buttons
+
+$btn-font-weight:             $font-weight-bold;
+$btn-transition:              all .15s ease-in-out;
+
+
+// Forms
+
+$input-placeholder-color:               $gray-800;
+$input-transition:                      border-color .15s ease-in-out, box-shadow none;
+$form-check-input-margin-y:             .25rem;
+$custom-select-indicator-color:     #333;
+
+
+// Dropdowns
+
+$dropdown-link-hover-color:         theme-color("primary");
+$dropdown-link-hover-bg:            transparent;
+$dropdown-link-active-color:        theme-color("primary");
+$dropdown-link-active-bg:           transparent;
+
+
+// Navs
+
+$nav-tabs-border-color:             #ddd;
+$nav-tabs-link-hover-border-color:  $gray-200;
+$nav-tabs-link-active-border-color: #ddd;
+
+
+// Navbar
+
+$navbar-dark-color:                 $white;
+$navbar-light-color:                $gray-700;
+$navbar-light-hover-color:          theme-color("primary");
+$navbar-light-active-color:         $gray-700;
+
+
+// Pagination
+
+$pagination-border-color:           #ddd;
+$pagination-hover-border-color:     #ddd;
+$pagination-disabled-border-color:  #ddd;
+
+
+// Image thumbnails
+
+$thumbnail-border-color:            #ddd;

@@ -33,9 +33,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700');
 @import 'icomoon';
-
 @import "bootstrap/functions";
+
+@import "landio-variables";
 @import "bootstrap/variables";
+
 @import "bootstrap/mixins";
 @import "bootstrap/print";
 @import "bootstrap/reboot";
@@ -116,6 +118,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 .bg-dark {
   color: #fff;
+  background-color: $gray-900 !important;
 
   a,
   a:focus,
@@ -126,7 +129,7 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 .bg-dark-custom {
   margin-top: 1.1875rem;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 .section-intro,
@@ -1361,6 +1364,8 @@ figure { position: relative; }
   color: rgba(255,255,255,.6);
   background-color: transparent;
 }
+
+// .badge-info { background-color: theme-color("blue"); }
 
 
 //
