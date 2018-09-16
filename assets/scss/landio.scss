@@ -521,6 +521,7 @@ h6 {
     background-position: calc(100% - 15px) 50%;
 
     @include media-breakpoint-up(md) {
+      height: 2.25rem;
       padding: .5625rem .625rem;
       font-size: .9375rem;
       background: none;
