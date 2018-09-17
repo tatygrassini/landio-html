@@ -1,3 +1,14 @@
+//=require libs/bootstrap/popper.min.js
+//=require libs/bootstrap/util.js
+//=require libs/bootstrap/carousel.js
+//=require libs/bootstrap/collapse.js
+//=require libs/bootstrap/dropdown.js
+//=require libs/bootstrap/modal.js
+//=require libs/jquery.waypoints.min.js
+//=require libs/video.js
+//=require libs/jquery.vimeo.api.min.js
+//=require libs/Chart.min.js
+
 (function ($) {
   "use strict";
 
